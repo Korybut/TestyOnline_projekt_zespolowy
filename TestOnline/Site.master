@@ -12,12 +12,11 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
-        
+    <form id="form1" runat="server"> 
             <header>
                 <div class="logo">Testy online</div>
             </header>
-        
+        <div>test strony</div>
     </form>
 
     <footer>
