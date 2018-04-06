@@ -55,8 +55,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-twitter:before { content: '\f099'; font-size: 76px; margin-top: 35px;} /* '' */
-.icon-facebook:before { content: '\f09a'; font-size: 76px; margin-top: 35px;} /* '' */
-.icon-gplus:before { content: '\f0d5'; font-size: 76px; margin-top: 35px;} /* '' */
-.icon-youtube:before { content: '\f167'; font-size: 76px; margin-top: 35px;} /* '' */
-.icon-google-plus-circle:before { content: '\f2b3'; font-size: 76px; margin-top: 35px;} /* '' */
+.icon-twitter:before { content: '\f099'; font-size: 46px; margin-top: 16px; margin-bottom: 16px;} /* '' */
+.icon-facebook:before { content: '\f09a'; font-size: 46px; margin-top: 16px; margin-bottom: 16px;} /* '' */
+.icon-gplus:before { content: '\f0d5'; font-size: 46px; margin-top: 16px; margin-bottom: 16px;} /* '' */
+.icon-youtube:before { content: '\f167'; font-size: 46px; margin-top: 16px; margin-bottom: 16px;} /* '' */
+.icon-google-plus-circle:before { content: '\f2b3'; font-size: 46px; margin-top: 16px; margin-bottom: 16px;} /* '' */
