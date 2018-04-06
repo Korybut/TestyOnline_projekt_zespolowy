@@ -1,8 +1,10 @@
 ﻿body {
     background-color: #424242;
     color: #efefef;
+    margin: 0px;
     font-size: 17px;
 }
+
 h1.logo {
     font-size: 24px;
     
@@ -10,70 +12,65 @@ h1.logo {
     text-align: center;
 }
 
-
-
-
-
-
-.socials
-{
-	width: 100%;
-	text-align: center;
-	background-color: #191d21;
+.socials {
+    width: 100%;
+    text-align: center;
+    background-color: #191d21;
 }
-.socialdivs
-{
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+
+.socialdivs {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .fb {
-    width: 250px;
-    height: 155px;
+    width: 25%;
+    height: 15%;
     float: left;
-    
 }
 
-.fb:hover
-{
+.fb:hover {
 		background-color: #4668b3;
 }
-.yt
-{
-	width: 250px;
-	height: 155px;
-	float: left;
-    
+
+.yt {
+    width: 25%;
+    height: 15%;
+    float: left;
 }
-.yt:hover
-{
+
+.yt:hover {
 		background-color: #d94348;
 }
+
 .gplus {
-    width: 250px;
-    height: 155px;
+    width: 25%;
+    height: 15%;
     float: left;
-    
 }
-.gplus:hover
-{
+
+.gplus:hover {
 		background-color: #d95333;
 }
+
 .tw {
-    width: 250px;
-    height: 155px;
+    width: 25%;
+    height: 15%;
     float: left;
-    
 }
-.tw:hover
-{
+
+.tw:hover {
 		background-color: #3095d3;
 }
-a.sclink
-{
+
+a.sclink {
     text-decoration: none;
     color: #ffffff;
+    width: 40%;
+    height: 40%;
 }
+
 .info {
     margin-left: auto;
     margin-right: auto;
