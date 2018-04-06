@@ -1,5 +1,82 @@
-﻿body 
-{
+﻿body {
     background-color: #424242;
+    color: #efefef;
+    font-size: 17px;
+}
+h1.logo {
+    font-size: 24px;
+    
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+
+
+
+
+
+.socials
+{
+	width: 100%;
+	text-align: center;
+	background-color: #191d21;
+}
+.socialdivs
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fb {
+    width: 250px;
+    height: 155px;
+    float: left;
+    
+}
+
+.fb:hover
+{
+		background-color: #4668b3;
+}
+.yt
+{
+	width: 250px;
+	height: 155px;
+	float: left;
+    
+}
+.yt:hover
+{
+		background-color: #d94348;
+}
+.gplus {
+    width: 250px;
+    height: 155px;
+    float: left;
+    
+}
+.gplus:hover
+{
+		background-color: #d95333;
+}
+.tw {
+    width: 250px;
+    height: 155px;
+    float: left;
+    
+}
+.tw:hover
+{
+		background-color: #3095d3;
+}
+a.sclink
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Site.aspx.cs" Inherits="TestOnline.Site" %>
+﻿
 
 <!DOCTYPE html>
 
@@ -8,13 +8,38 @@
     <title>Testy online</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
 
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            test strony</div>
+    <form id="form1" runat="server"> 
+            <header>
+                <div class="logo">Testy online</div>
+            </header>
+        <div>test strony</div>
     </form>
+
+    <footer>
+        <div class="socials">
+				<div class="socialdivs">
+					<div class="fb">
+						<a href="https://www.facebook.com" target="_blank" class="sclink"><i class="icon-facebook"></i></a>
+					</div>
+					<div class="yt">
+						<a href="https://www.youtube.com" target="_blank" class="sclink"><i class="icon-youtube"></i></a>
+					</div>
+					<div class="tw">
+						<a href="https://www.twitter.com" target="_blank" class="sclink"><i class="icon-twitter"></i></a>
+					</div>
+					<div class="gplus">
+						<a href="https://www.plus.google.com" target="_blank" class="sclink"><i class="icon-gplus"></i></a>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+			</div>	
+				<div class="info">
+					Wszelkie prawa zastrzeżone &copy 2018.
+				</div>
+    </footer>
 </body>
 </html>

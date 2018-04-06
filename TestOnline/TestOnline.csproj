@@ -66,6 +66,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\animation.css" />
+    <Content Include="css\fontello-codes.css" />
+    <Content Include="css\fontello-embedded.css" />
+    <Content Include="css\fontello-ie7-codes.css" />
+    <Content Include="css\fontello-ie7.css" />
+    <Content Include="css\fontello.css" />
+    <Content Include="font\fontello.svg" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="README.txt" />
+    <Content Include="WebForm.aspx" />
+    <Content Include="config.json" />
+    <Content Include="font\fontello.eot" />
+    <Content Include="font\fontello.ttf" />
+    <Content Include="font\fontello.woff" />
+    <Content Include="font\fontello.woff2" />
     <None Include="packages.config" />
     <Content Include="Site.master" />
     <None Include="Web.Debug.config">
@@ -88,7 +103,15 @@
     <Compile Include="Site.master.designer.cs">
       <DependentUpon>Site.master</DependentUpon>
     </Compile>
+    <Compile Include="WebForm.aspx.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm.aspx.designer.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
