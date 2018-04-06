@@ -72,7 +72,6 @@
     <Content Include="css\fontello-ie7-codes.css" />
     <Content Include="css\fontello-ie7.css" />
     <Content Include="css\fontello.css" />
-    <Content Include="demo.html" />
     <Content Include="font\fontello.svg" />
     <Content Include="LICENSE.txt" />
     <Content Include="README.txt" />
