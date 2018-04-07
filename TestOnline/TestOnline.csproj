@@ -72,9 +72,11 @@
     <Content Include="css\fontello-ie7-codes.css" />
     <Content Include="css\fontello-ie7.css" />
     <Content Include="css\fontello.css" />
+    <Content Include="css\login.css" />
     <Content Include="Default.aspx" />
     <Content Include="font\fontello.svg" />
     <Content Include="LICENSE.txt" />
+    <Content Include="Login.aspx" />
     <Content Include="README.txt" />
     <Content Include="config.json" />
     <Content Include="font\fontello.eot" />
@@ -82,6 +84,7 @@
     <Content Include="font\fontello.woff" />
     <Content Include="font\fontello.woff2" />
     <None Include="packages.config" />
+    <Content Include="RecoveryPassword.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -102,7 +105,21 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecoveryPassword.aspx.cs">
+      <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecoveryPassword.aspx.designer.cs">
+      <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
