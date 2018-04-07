@@ -23,7 +23,7 @@
         <footer id="stopka">
             <div class="socials">
 		        <div class="socialdivs">
-			        <div class="fb">
+			        <div class="fb" dir="rtl">
 				        <a href="https://www.facebook.com" target="_blank" class="sclink"><i class="icon-facebook"></i></a>
 				    </div>
 			        <div class="yt">
@@ -37,10 +37,7 @@
 				    </div>
 				    <div style="clear:both"></div>
 			    </div>
-		    </div>	
-		    <!-- <div class="info">
-		        Wszelkie prawa zastrzeżone &copy 2018.
-		    </div> -->
+		    </div>
         </footer>
     </body>
 </html>
