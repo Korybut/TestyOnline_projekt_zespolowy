@@ -1,0 +1,60 @@
+﻿body {
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+}
+
+.all {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.all input {
+    margin: 10px 5px;
+    padding: 3px;
+}
+
+.fieldset-login {
+    border: 1px black solid;
+    width: 220px;
+    float: left;
+    margin: 5px;
+}
+
+.legend-login {
+    border: 0px black solid;
+    margin-left: 1em;
+    padding: 0.2em 0.8em
+}
+
+.fieldset-register {
+    border: 1px black solid;
+    width: 220px;
+    float: right;
+    margin: 5px;
+}
+
+.legend-register {
+    border: 0px black solid;
+    margin-left: 1em;
+    padding: 0.2em 0.8em
+}
+
+.link:link, .link:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.g-recaptcha {
+    transform: scale(0.74);
+    transform-origin: 0 0;
+   
+    width: 120px;
+}
