@@ -1,22 +1,26 @@
-﻿
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TestOnline.Site1" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Testy online</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
 
+    </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server"> 
             <header>
                 <div class="logo">Testy online</div>
             </header>
-        <div>test strony</div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 
     <footer>
@@ -41,5 +45,6 @@
 					Wszelkie prawa zastrzeżone &copy 2018.
 				</div>
     </footer>
+    
 </body>
 </html>

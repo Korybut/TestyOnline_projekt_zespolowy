@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TestOnline
 {
-    public partial class Site : System.Web.UI.Page
+    public partial class Site1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
