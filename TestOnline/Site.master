@@ -5,46 +5,42 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/fontello.css" type="text/css">
-    <asp:ContentPlaceHolder ID="head" runat="server">
-
-    </asp:ContentPlaceHolder>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/fontello.css" type="text/css">
+<asp:ContentPlaceHolder ID="head" runat="server">
+    <!-- Miejsce na dodatkową zawartość head -->
+</asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server"> 
-            <header>
-                <div class="logo">Testy online</div>
-            </header>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <body>
+        <header>
+            <div class="logo">Testy online</div>
+        </header>
 
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+        <form id="form1" runat="server"> 
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </form>
 
-    <footer>
-        <div class="socials">
-				<div class="socialdivs">
-					<div class="fb">
-						<a href="https://www.facebook.com" target="_blank" class="sclink"><i class="icon-facebook"></i></a>
-					</div>
-					<div class="yt">
-						<a href="https://www.youtube.com" target="_blank" class="sclink"><i class="icon-youtube"></i></a>
-					</div>
-					<div class="tw">
-						<a href="https://www.twitter.com" target="_blank" class="sclink"><i class="icon-twitter"></i></a>
-					</div>
-					<div class="gplus">
-						<a href="https://www.plus.google.com" target="_blank" class="sclink"><i class="icon-gplus"></i></a>
-					</div>
-					<div style="clear:both"></div>
-				</div>
-			</div>	
-				<div class="info">
-					Wszelkie prawa zastrzeżone &copy 2018.
-				</div>
-    </footer>
-    
-</body>
+        <footer id="stopka">
+            <div class="socials">
+		        <div class="socialdivs">
+			        <div class="fb">
+				        <a href="https://www.facebook.com" target="_blank" class="sclink"><i class="icon-facebook"></i></a>
+				    </div>
+			        <div class="yt">
+					    <a href="https://www.youtube.com" target="_blank" class="sclink"><i class="icon-youtube"></i></a>
+				    </div>
+				    <div class="tw">
+					    <a href="https://www.twitter.com" target="_blank" class="sclink"><i class="icon-twitter"></i></a>
+				    </div>
+				    <div class="gplus">
+					    <a href="https://www.plus.google.com" target="_blank" class="sclink"><i class="icon-gplus"></i></a>
+				    </div>
+				    <div style="clear:both"></div>
+			    </div>
+		    </div>	
+		    <!-- <div class="info">
+		        Wszelkie prawa zastrzeżone &copy 2018.
+		    </div> -->
+        </footer>
+    </body>
 </html>
