@@ -10,6 +10,6 @@
 namespace TestOnline {
     
     
-    public partial class WebForm {
+    public partial class Default {
     }
 }
