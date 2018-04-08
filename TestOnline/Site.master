@@ -5,18 +5,29 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/fontello.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 <asp:ContentPlaceHolder ID="head" runat="server">
     <!-- Miejsce na dodatkową zawartość head -->
 </asp:ContentPlaceHolder>
 </head>
     <body>
-        <header>
-            <div class="logo">Testy online</div>
-        </header>
 
         <form id="form1" runat="server"> 
+        <header id="naglowek">
+            <div style="position: relative; width: 58%; height: 100%; float: left">
+                <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
+            </div>
+            <div id="user_header">
+                    <asp:Label ID="LabelName" runat="server" Text="imię użytkownika"></asp:Label><br />
+                    <asp:Label ID="LabelLogin" runat="server" Text="login użyt..."></asp:Label>
+            </div>
+            <div style="position: relative; width: 7%; height: 100%; float: left; text-align: left">
+                <img id="avatar" src="img/default-avatar.jpg">
+            </div>
+        </header>
+
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
         </form>
 
