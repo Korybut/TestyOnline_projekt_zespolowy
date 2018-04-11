@@ -14,48 +14,12 @@ body {
     min-height: 82%;
 }
 
-#naglowek {
-    position: fixed;
-    height: 10%;
-    background-color: #191d21;
-    top: 0px;
-    width: 100%;
-}
-
-#logotyp {
-    position: relative;
-    width: auto;
-    height: 80%;
-    top: 10%;
-    left: 2%;
-}
-
 #user_header {
     position: relative;
     float: left;
     width: 35%;
     height: 100%;
     text-align: right;
-}
-
-#LabelName {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 27px;
-}
-
-#LabelLogin {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
-#avatar {
-    position: relative;
-    float: right;
-    width: auto;
-    height: 80%;
-    margin-left: 10px;
-    top: 10%;
-    border-radius: 50%;
 }
 
 #stopka {

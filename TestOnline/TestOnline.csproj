@@ -72,6 +72,7 @@
     <Content Include="css\fontello-ie7-codes.css" />
     <Content Include="css\fontello-ie7.css" />
     <Content Include="css\fontello.css" />
+    <Content Include="css\header.css" />
     <Content Include="css\login.css" />
     <Content Include="Default.aspx" />
     <Content Include="font\fontello.svg" />
