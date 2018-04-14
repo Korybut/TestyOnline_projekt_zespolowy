@@ -38,7 +38,6 @@
                 <asp:TextBox ID="TextBox_Rphaslo" runat="server" placeholder="Powtórz hasło" TextMode="Password" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
                 <div class="g-recaptcha" data-sitekey="6Lcxj1EUAAAAAHKiqksDXYdN8t8uKq_8HwEMKWHf"></div>
-                <asp:Label ID="Label1" runat="server" Text="X"></asp:Label>
                 <br />
                 <asp:Button ID="Button_Rejestracja" runat="server" Text="Rejestruj" ValidationGroup="Rejestracja" />
             </fieldset>

@@ -49,8 +49,8 @@ namespace TestOnline
                 //SqlDataReader reader = cmd2.ExecuteReader();
                 //while (reader.Read())
                 //{
-                Response.Cookies["userName"].Value = TextBox_Llogin.Text;
-                Response.Cookies["userName"].Expires = DateTime.Now.AddDays(1);
+                Response.Cookies["userLogin"].Value = TextBox_Llogin.Text;
+                Response.Cookies["userLogin"].Expires = DateTime.Now.AddDays(1);
                 
                 //HttpCookie logowanie = new HttpCookie("Login");
                 //    logowanie["user"] = TextBoxLogin.Text;

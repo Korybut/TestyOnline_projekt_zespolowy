@@ -21,7 +21,7 @@
                   <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
   	        </div>
             <div class="right_div">
-                <img class="avatar" src="img/default-avatar.jpg"></a>
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><img class="avatar" src="img/default-avatar.jpg"></asp:LinkButton>
                 <div class="labels_div">
                     <asp:Label ID="LabelName" runat="server" Text="imię użytkownika"></asp:Label><br />
                     <asp:Label ID="LabelLogin" runat="server" Text="login użytkownika"></asp:Label>
