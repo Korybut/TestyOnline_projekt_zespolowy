@@ -20,7 +20,7 @@
                 <asp:TextBox ID="TextBox_Lhaslo" runat="server" TextMode="Password" placeholder="Hasło" ValidationGroup="Logowanie"></asp:TextBox>
                 <asp:HyperLink ID="HyperLink1" runat="server" CssClass="link" NavigateUrl="~/RecoveryPassword.aspx">Przypomnij hasło</asp:HyperLink>
                 <br />
-                <asp:Button ID="Button_Zaloguj" runat="server" Text="Zaloguj" ValidationGroup="Logowanie" />
+                <asp:Button ID="Button_Zaloguj" runat="server" Text="Zaloguj" ValidationGroup="Logowanie" OnClick="Button_Zaloguj_Click" />
             </fieldset>
             
             <fieldset class="fieldset-register">
@@ -38,11 +38,11 @@
                 <asp:TextBox ID="TextBox_Rphaslo" runat="server" placeholder="Powtórz hasło" TextMode="Password" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
                 <div class="g-recaptcha" data-sitekey="6Lcxj1EUAAAAAHKiqksDXYdN8t8uKq_8HwEMKWHf"></div>
-                <asp:Label ID="Label1" runat="server" Text="X"></asp:Label>
                 <br />
                 <asp:Button ID="Button_Rejestracja" runat="server" Text="Rejestruj" ValidationGroup="Rejestracja" />
             </fieldset>
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
     </form>
 </body>
 </html>
