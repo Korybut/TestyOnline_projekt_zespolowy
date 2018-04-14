@@ -14,6 +14,15 @@ namespace TestOnline
 
         }
 
-        
+        protected void Button_Rejestracja_Click(object sender, EventArgs e)
+        {
+            if(!Page.IsValid)
+            {
+                Label1.Text = "Blad walidacji";
+            } else
+            {
+                Label1.Text = "OK";
+            }
+        }
     }
 }
