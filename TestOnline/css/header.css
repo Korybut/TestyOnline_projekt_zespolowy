@@ -52,3 +52,15 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
+
+#UserPopup {
+    position: fixed;
+    top: 75px;
+    right: 10px;
+    width: 180px;
+    height: 80px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: none;
+}

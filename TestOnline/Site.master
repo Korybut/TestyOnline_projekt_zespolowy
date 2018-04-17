@@ -17,6 +17,7 @@
 
         <form id="form1" runat="server">
         <header>
+            
   	        <div class="left_div" style="">
                   <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
   	        </div>
@@ -27,21 +28,12 @@
                     <asp:Label ID="LabelLogin" runat="server" Text="login użytkownika"></asp:Label>
                 </div>
             </div>
+            <div runat="server" ID="UserPopup">
+                    Ustawienia<br />
+                    Wyloguj
+            </div>
         </header>
-        <!-- <header>
-            <div style="position: relative; width: 58%; height: 100%; float: left">
-                <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
-            </div>
-            <div id="user_header">
-                    
-            </div>
-            <div style="position: relative; width: 7%; height: 100%; float: left; text-align: left">
-                <img id="avatar" src="img/default-avatar.jpg">
-            </div>
-        </header> -->
-
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-        </form>
 
         <footer id="stopka">
             <div class="socials">
@@ -62,5 +54,8 @@
 			    </div>
 		    </div>
         </footer>
-    </body>
+            
+        </form>
+
+        </body>
 </html>

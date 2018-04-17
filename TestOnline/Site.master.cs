@@ -46,10 +46,14 @@ namespace TestOnline
             Response.Redirect("~/");
         }
 
+        protected System.Web.UI.HtmlControls.HtmlGenericControl UserPopup;
+        protected bool clickedAvatar = false;
+
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             //tymczasowe wylogowanie sie, po przez klikniecie na avatar
-            Logout();
+            //Logout();
         }
+
     }
 }

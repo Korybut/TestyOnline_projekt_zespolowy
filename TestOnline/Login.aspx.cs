@@ -20,10 +20,10 @@ namespace TestOnline
         {
             if(!Page.IsValid)
             {
-                Label1.Text = "Blad walidacji";
+               // Label1.Text = "Blad walidacji";
             } else
             {
-                Label1.Text = "OK";
+               // Label1.Text = "OK";
             }
         }
 
