@@ -4,6 +4,8 @@
 
 <html>
 <head runat="server">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/UserPopup.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/header.css">
@@ -14,25 +16,24 @@
 </asp:ContentPlaceHolder>
 </head>
     <body>
-
         <form id="form1" runat="server">
         <header>
-            
   	        <div class="left_div" style="">
                   <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
   	        </div>
-            <div class="right_div">
-                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><img class="avatar" src="img/default-avatar.jpg"></asp:LinkButton>
+            <div class="right_div" onclick="myFunction()">
+                <img class="avatar" src="img/default-avatar.jpg">
                 <div class="labels_div">
                     <asp:Label ID="LabelName" runat="server" Text="imię użytkownika"></asp:Label><br />
                     <asp:Label ID="LabelLogin" runat="server" Text="login użytkownika"></asp:Label>
                 </div>
             </div>
-            <div runat="server" ID="UserPopup">
-                    Ustawienia<br />
-                    Wyloguj
+            <div id="UserPopup">
+                    <span>Ustawienia</span><br />
+                    <span>Wyloguj</span>
             </div>
         </header>
+
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
         <footer id="stopka">
