@@ -52,8 +52,8 @@ namespace TestOnline
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             //tymczasowe wylogowanie sie, po przez klikniecie na avatar
-            //Logout();
+            Logout();
         }
-
+        
     }
 }

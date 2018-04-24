@@ -58,3 +58,22 @@
    
     width: 120px;
 }
+
+.fieldset_przypomnij_haslo {
+    border: 1px black solid;
+    width: 100%;
+    float: left;
+    margin: 5px;
+    text-align: center;
+}
+
+    .fieldset_przypomnij_haslo table {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+.legend_przypomnij_haslo {
+    border: 0px black solid;
+    margin-left: 1em;
+    padding: 0.2em 0.8em
+}
