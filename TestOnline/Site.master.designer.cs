@@ -49,6 +49,15 @@ namespace TestOnline {
         protected global::System.Web.UI.WebControls.Label LabelLogin;
         
         /// <summary>
+        /// Kontrolka LinkButton1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        
+        /// <summary>
         /// Kontrolka ContentPlaceHolder1.
         /// </summary>
         /// <remarks>
