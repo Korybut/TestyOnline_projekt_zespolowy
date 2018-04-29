@@ -6,15 +6,22 @@
 .user_panel {
     position: relative;
     float: left;
-    width: 30%;
+    width: 25%;
     height: 81vh;
     display: block;
-    background-color: black;
+    background-color: #2B2C30;
+}
+
+.user_info {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10%;
 }
 
 .user_wall {
     position: relative;
     float: left;
+    width: 75%;
     height: 81vh;
     display: block;
 }
