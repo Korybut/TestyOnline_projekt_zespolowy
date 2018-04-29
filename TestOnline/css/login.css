@@ -1,14 +1,22 @@
 ﻿body {
+    font-family: 'Open Sans', sans-serif;
     width: 550px;
     margin: 0 auto;
     text-align: center;
     color: #000;
 }
 
+img {
+    position: relative;
+    top: 15px;
+    width: 550px;
+    height: auto;
+}
+
 .all {
     text-align: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 .all input {
@@ -17,27 +25,34 @@
 }
 
 .fieldset-login {
-    border: 1px black solid;
     width: 220px;
     float: left;
     margin: 5px;
 }
 
+fieldset {
+    border: 1px #fff solid;
+    border-radius: 10px;
+}
+
 .legend-login {
-    border: 0px black solid;
+    border: 0px #fff solid;
+    color: #fff;
+    border-radius: 10px;
     margin-left: 1em;
     padding: 0.2em 0.8em
 }
 
 .fieldset-register {
-    border: 1px black solid;
     width: 220px;
     float: right;
     margin: 5px;
 }
 
 .legend-register {
-    border: 0px black solid;
+    border: 0px #fff solid;
+    color: #fff;
+    border-radius: 10px;
     margin-left: 1em;
     padding: 0.2em 0.8em
 }
