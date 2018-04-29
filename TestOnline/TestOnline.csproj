@@ -78,11 +78,11 @@
     <Content Include="css\fontello.css" />
     <Content Include="css\header.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\user.css" />
     <Content Include="Default.aspx" />
     <Content Include="font\fontello.svg" />
     <Content Include="img\default-avatar.jpg" />
     <Content Include="img\logotyp.png" />
-    <Content Include="LICENSE.txt" />
     <Content Include="Login.aspx" />
     <Content Include="README.txt" />
     <Content Include="config.json" />

@@ -59,7 +59,7 @@ namespace TestOnline
                 //}
                 //reader.Close();
 
-                Response.Redirect("~/");
+                Response.Redirect("User.aspx");
             }
             else
             {
