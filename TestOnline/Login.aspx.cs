@@ -29,9 +29,9 @@ namespace TestOnline
 
         protected void Button_Zaloguj_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ToString());
+            SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
             con.Open();
-            string query = "SELECT count(*) FROM USERS WHERE login='" + TextBox_Llogin.Text + "' AND haslo='" + TextBox_Lhaslo.Text + "'";
+            string query = "SELECT count(*) FROM UZYTKOWNICY WHERE login='" + TextBox_Llogin.Text + "' AND haslo='" + TextBox_Lhaslo.Text + "'";
 
             SqlCommand cmd = new SqlCommand(query, con);
             string output = cmd.ExecuteScalar().ToString();
