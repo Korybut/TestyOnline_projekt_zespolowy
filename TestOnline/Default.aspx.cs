@@ -11,7 +11,14 @@ namespace TestOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Response.Cookies["userLogin"].Value == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                Response.Redirect("User.aspx");
+            }
         }
     }
 }
