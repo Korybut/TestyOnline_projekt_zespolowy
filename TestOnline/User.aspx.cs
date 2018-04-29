@@ -11,7 +11,7 @@ namespace TestOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LoginLabel.Text = Server.HtmlEncode(Request.Cookies["userLogin"].Value);
         }
     }
 }
