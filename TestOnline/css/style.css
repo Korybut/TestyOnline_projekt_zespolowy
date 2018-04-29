@@ -6,12 +6,12 @@ body {
     background-color: #424242;
     color: #efefef;
     margin: 0px;
-    height: 100%;
+    height: 81vh;
     font-size: 1em;
 }
 
 #content {
-    min-height: 82%;
+    min-height: 81vh;
 }
 
 #user_header {
@@ -24,7 +24,7 @@ body {
 
 #stopka {
     position: fixed;
-    height: 8%;
+    height: 8vh;
     background-color: #191d21;
     bottom: 0px;
     left: 0px;
