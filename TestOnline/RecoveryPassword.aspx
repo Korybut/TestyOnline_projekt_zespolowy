@@ -13,7 +13,7 @@
         <div class="all">
             <fieldset class="fieldset_przypomnij_haslo">
             <legend class="legend_przypomnij_haslo">Przypomnienie hasła</legend>
-                <table>
+                <table align="center">
                     <tr>
                         <td><asp:Label ID="Label1" runat="server" Text="Podaj adres e-mail:"></asp:Label></td>
                         <td><asp:TextBox ID="TextBox_email" runat="server"></asp:TextBox></td>

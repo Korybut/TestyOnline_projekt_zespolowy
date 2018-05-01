@@ -31,6 +31,15 @@ namespace TestOnline {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Kontrolka Panel_login.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel_login;
+        
+        /// <summary>
         /// Kontrolka LabelName.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,24 @@ namespace TestOnline {
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelLogin;
+        
+        /// <summary>
+        /// Kontrolka Panel_all.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel_all;
+        
+        /// <summary>
+        /// Kontrolka Panel_login_popup.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel_login_popup;
         
         /// <summary>
         /// Kontrolka LinkButton1.
