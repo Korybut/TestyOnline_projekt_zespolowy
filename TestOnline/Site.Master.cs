@@ -20,11 +20,8 @@ namespace TestOnline
         {
             if (Request.Cookies["userLogin"] != null)
             {
-                //wyswieltenie odpowiedniego panelu
-                Panel_login.Visible = true;
-                Panel_all.Visible = false;
-                Panel_login_popup.Visible = true;
-                //string login = Server.HtmlEncode(Request.Cookies["userLogin"].Value);
+                UserPanel.Visible = true;
+                LoginPanel.Visible = false;
                 string login = "hh";
                 SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
                 con.Open();
@@ -40,10 +37,9 @@ namespace TestOnline
             }
             else
             {
-                //jeżeli nie jest zalogowany...
-                Panel_login.Visible = false;
-                Panel_all.Visible = true;
-                Panel_login_popup.Visible = false;
+                // na chwilę wyłączam aby edytować Response.Redirect("Login.aspx");
+                UserPanel.Visible = false;
+                LoginPanel.Visible = true;
             }
         }
 
@@ -51,7 +47,7 @@ namespace TestOnline
         {
             //wylogowanie sie
             Response.Cookies["userLogin"].Expires = DateTime.Now.AddDays(-1);
-            Response.Redirect("~/");
+            Response.Redirect("Login.aspx");
         }
 
         protected System.Web.UI.HtmlControls.HtmlGenericControl UserPopup;

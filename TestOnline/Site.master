@@ -24,27 +24,34 @@
     <body>
         <form id="form1" runat="server">
         <header>
+            <!-- Lewy div z logotypem -->
   	        <div class="left_div" style="">
                   <a href="/"><img id="logotyp" src="img/logotyp.png" alt="tesciki.pl" class="auto-style1"></a>
   	        </div>
-                <div class="right_div" onclick="myFunction()">
-                    <asp:Panel ID="Panel_login" runat="server">
+
+            <!-- Prawy div z elementami użytkownika -->
+            <div class="right_div" ID="UserPanel" runat="server" onclick="myFunction()">
+                <asp:Panel ID="Panel_login" runat="server">
                     <img class="avatar" src="img/default-avatar.jpg">
                     <div class="labels_div">
                         <asp:Label ID="LabelName" runat="server" Text="imię użytkownika"></asp:Label><br />
                         <asp:Label ID="LabelLogin" runat="server" Text="login użytkownika"></asp:Label>
                     </div>
-                    </asp:Panel>
-                    <asp:Panel ID="Panel_all" runat="server">
+                </asp:Panel> 
+            </div>
+
+            <!-- Panel z przyciskiem logowania -->
+            <asp:Panel ID="LoginPanel" runat="server">
                         <div class="labels_div">
                         <a href="Login.aspx">Zaloguj się</a>
                     </div>
-                    </asp:Panel>
-                </div>
+            </asp:Panel>
+
+            <!-- Panel typu popup z odnośnikami do Ustawień i Wyloguj -->
             <asp:Panel ID="Panel_login_popup" runat="server">
                 <div id="UserPopup">
-                        <span>Ustawienia</span><br />
-                        <span><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Wyloguj</asp:LinkButton></span>
+                    <span>Ustawienia</span><br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Wyloguj</asp:LinkButton>
                 </div>
             </asp:Panel>
         </header>
