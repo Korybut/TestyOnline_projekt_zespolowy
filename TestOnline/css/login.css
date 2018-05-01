@@ -82,10 +82,10 @@ fieldset {
     text-align: center;
 }
 
-    .fieldset_przypomnij_haslo table {
-        text-align: center;
-        margin: 0 auto;
-    }
+.fieldset_przypomnij_haslo table {
+    text-align: center;
+    margin: 0 auto;
+}
 
 .legend_przypomnij_haslo {
     border: 0px black solid;

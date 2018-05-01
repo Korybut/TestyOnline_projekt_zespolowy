@@ -44,23 +44,30 @@
             
             <fieldset class="fieldset-register">
             <legend class="legend-register">Rejestracja</legend>
+                <asp:Label ID="Label_Rblad" runat="server" Text="Label" ForeColor="Red" CssClass="auto-style3" Visible="False"></asp:Label>
                 <asp:RequiredFieldValidator ID="Error_Rlogin" runat="server" ControlToValidate="TextBox_Rlogin" Display="Dynamic" ErrorMessage="Wpisz login!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3"></asp:RequiredFieldValidator>
+                <br />
                 <asp:TextBox ID="TextBox_Rlogin" runat="server" placeholder="Login" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
                 <asp:RequiredFieldValidator ID="Error_Remail" runat="server" ControlToValidate="TextBox_Remail" Display="Dynamic" ErrorMessage="Wpisz adres e-mail!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="Error_Remail_zle" runat="server" ErrorMessage="Podaj prawidłowy adres e-mail!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3" ControlToValidate="TextBox_Remail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                <br />
                 <asp:TextBox ID="TextBox_Remail" runat="server" placeholder="E-mail" TextMode="Email" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
                 <asp:RequiredFieldValidator ID="Error_Rimie" runat="server" ControlToValidate="TextBox_Rimie" Display="Dynamic" ErrorMessage="Wpisz imie!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3"></asp:RequiredFieldValidator>
+                <br />
                 <asp:TextBox ID="TextBox_Rimie" runat="server" placeholder="Imię" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
                 <asp:RequiredFieldValidator ID="Error_Rhaslo" runat="server" ControlToValidate="TextBox_Rhaslo" Display="Dynamic" ErrorMessage="Wpisz hasło!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3"></asp:RequiredFieldValidator>
+                <br />
                 <asp:TextBox ID="TextBox_Rhaslo" runat="server" placeholder="Hasło" TextMode="Password" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
                 <asp:CompareValidator ID="Error_Rphaslo" runat="server" ControlToCompare="TextBox_Rphaslo" ControlToValidate="TextBox_Rhaslo" Display="Dynamic" ErrorMessage="Hasła sie nie zgadzają!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3"></asp:CompareValidator>
+                <br />
                 <asp:TextBox ID="TextBox_Rphaslo" runat="server" placeholder="Powtórz hasło" TextMode="Password" ValidationGroup="Rejestracja"></asp:TextBox>
                 <br />
-                <div class="g-recaptcha" data-sitekey="6Lcxj1EUAAAAAHKiqksDXYdN8t8uKq_8HwEMKWHf"></div>
-                <asp:Button ID="Button_Rejestracja" runat="server" Text="Rejestruj" ValidationGroup="Rejestracja" BorderStyle="None" CssClass="auto-style2" Height="28px" />
+                <!--<div class="g-recaptcha" data-sitekey="6Lcxj1EUAAAAAHKiqksDXYdN8t8uKq_8HwEMKWHf"></div>-->
+                <asp:Button ID="Button_Rejestracja" runat="server" Text="Rejestruj" ValidationGroup="Rejestracja" BorderStyle="None" CssClass="auto-style2" Height="28px" OnClick="Button_Rejestracja_Click1" />
             </fieldset>
         </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>

@@ -76,6 +76,15 @@ namespace TestOnline {
         protected global::System.Web.UI.WebControls.Button Button_Zaloguj;
         
         /// <summary>
+        /// Kontrolka Label_Rblad.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Rblad;
+        
+        /// <summary>
         /// Kontrolka Error_Rlogin.
         /// </summary>
         /// <remarks>
@@ -101,6 +110,15 @@ namespace TestOnline {
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Remail;
+        
+        /// <summary>
+        /// Kontrolka Error_Remail_zle.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator Error_Remail_zle;
         
         /// <summary>
         /// Kontrolka TextBox_Remail.

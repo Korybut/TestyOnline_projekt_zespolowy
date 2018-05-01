@@ -20,10 +20,11 @@ namespace TestOnline
         {
             if (Request.Cookies["userLogin"] != null)
             {
-                string login = Server.HtmlEncode(Request.Cookies["userLogin"].Value);
+                //string login = Server.HtmlEncode(Request.Cookies["userLogin"].Value);
+                string login = "hh";
                 SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
                 con.Open();
-                string query = "SELECT login,imie FROM UZYTKOWNICY WHERE login='" + login + "'";
+                string query = "SELECT login,imie FROM UZYTKOWNICY WHERE login='" + Request.Cookies["userLogin"].Value + "'";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
