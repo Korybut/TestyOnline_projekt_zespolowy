@@ -10,7 +10,7 @@
     <body>
         <div class="user_panel">
             <div class="user_info">
-                <!-- Należy przypiąć imię użytkownika -->
+                <!-- Należy przypiąć login użytkownika -->
                 <strong>
                 <asp:Label style="font-size: 1.5em" ID="LoginLabel" runat="server" Text="Login użytkownika"></asp:Label>
                 </strong>

@@ -21,28 +21,26 @@
   	        <div class="left_div" style="">
                   <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
   	        </div>
-            <% if (Request.Cookies["userLogin"] != null)
-                     {%>
                 <div class="right_div" onclick="myFunction()">
+                    <asp:Panel ID="Panel_login" runat="server">
                     <img class="avatar" src="img/default-avatar.jpg">
                     <div class="labels_div">
                         <asp:Label ID="LabelName" runat="server" Text="imię użytkownika"></asp:Label><br />
                         <asp:Label ID="LabelLogin" runat="server" Text="login użytkownika"></asp:Label>
                     </div>
+                    </asp:Panel>
+                    <asp:Panel ID="Panel_all" runat="server">
+                        <div class="labels_div">
+                        <a href="Login.aspx">Zaloguj się</a>
+                    </div>
+                    </asp:Panel>
                 </div>
+            <asp:Panel ID="Panel_login_popup" runat="server">
                 <div id="UserPopup">
                         <span>Ustawienia</span><br />
                         <span><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Wyloguj</asp:LinkButton></span>
                 </div>
-            <% }
-            else
-            {%>
-                <div class="right_div" onclick="myFunction()">
-                    <div class="labels_div">
-                        <a href="Login.aspx">Zaloguj się</a>
-                    </div>
-                </div>
-            <% } %>
+            </asp:Panel>
         </header>
             
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
