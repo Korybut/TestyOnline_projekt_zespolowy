@@ -34,6 +34,7 @@ namespace TestOnline
             {
                 //czynności w przypadku braku zalogowania
                 //do strony logowania przenosi już operacja z Site.Master, więc tutaj nie jest drugi raz potrzebna
+                Response.Redirect("Login.aspx");
             }
 
 
