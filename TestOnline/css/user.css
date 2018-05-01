@@ -1,9 +1,4 @@
-﻿body {
-    width: 100%;
-    height: 100%;
-}
-
-.user_panel {
+﻿.user_panel {
     position: relative;
     float: left;
     width: 25%;
@@ -24,4 +19,5 @@
     width: 75%;
     height: 81vh;
     display: block;
+    z-index: -1;
 }

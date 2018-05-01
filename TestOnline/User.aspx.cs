@@ -15,6 +15,8 @@ namespace TestOnline
             if (Request.Cookies["userLogin"] != null)
             {
                 //string login = Server.HtmlEncode(Request.Cookies["userLogin"].Value);
+
+                // Połączenie z serwerem i ustawienie w panelu użytkownika parametrów z zalogowanego konta
                 SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
                 con.Open();
                 string query = "SELECT login,imie FROM UZYTKOWNICY WHERE login='" + Request.Cookies["userLogin"].Value + "'";
@@ -30,7 +32,8 @@ namespace TestOnline
             }
             else
             {
-                //Response.Redirect("Login.aspx");
+                //czynności w przypadku braku zalogowania
+                //do strony logowania przenosi już operacja z Site.Master, więc tutaj nie jest drugi raz potrzebna
             }
 
 

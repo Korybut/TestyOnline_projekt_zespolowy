@@ -20,9 +20,11 @@ namespace TestOnline
         {
             if (Request.Cookies["userLogin"] != null)
             {
+                // Ukrycie/Pokazanie paneli dostępnych dla zalogowanych użytkowników
                 UserPanel.Visible = true;
                 LoginPanel.Visible = false;
-                string login = "hh";
+
+                // Połączenie z bazą - pobranie nazwy użytkownika i imienia
                 SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
                 con.Open();
                 string query = "SELECT login,imie FROM UZYTKOWNICY WHERE login='" + Request.Cookies["userLogin"].Value + "'";
@@ -37,7 +39,7 @@ namespace TestOnline
             }
             else
             {
-                // na chwilę wyłączam aby edytować Response.Redirect("Login.aspx");
+                // Ukrycie/Pokazanie paneli dostępnych dla niezalogowanych
                 UserPanel.Visible = false;
                 LoginPanel.Visible = true;
             }
@@ -50,12 +52,11 @@ namespace TestOnline
             Response.Redirect("Login.aspx");
         }
 
-        protected System.Web.UI.HtmlControls.HtmlGenericControl UserPopup;
-        protected bool clickedAvatar = false;
+        //protected System.Web.UI.HtmlControls.HtmlGenericControl UserPopup;
+        //protected bool clickedAvatar = false;
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        protected void LogoutLinkButton_Click(object sender, EventArgs e)
         {
-            //tymczasowe wylogowanie sie, po przez klikniecie na avatar
             Logout();
         }
         
