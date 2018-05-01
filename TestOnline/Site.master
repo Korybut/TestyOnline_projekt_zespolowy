@@ -14,13 +14,19 @@
 <asp:ContentPlaceHolder ID="head" runat="server">
     <!-- Miejsce na dodatkową zawartość head -->
 </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            left: 10px;
+            top: 10px;
+        }
+    </style>
 </head>
     <body>
         <form id="form1" runat="server">
         <header>
             <!-- Lewy div z logotypem -->
   	        <div class="left_div" style="">
-                  <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
+                  <a href="/"><img id="logotyp" src="img/logotyp.png" alt="tesciki.pl" class="auto-style1"></a>
   	        </div>
 
             <!-- Prawy div z elementami użytkownika -->

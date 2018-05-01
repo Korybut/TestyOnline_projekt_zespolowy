@@ -22,6 +22,15 @@ namespace TestOnline {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Kontrolka Label_Lblad.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Lblad;
+        
+        /// <summary>
         /// Kontrolka Error_Login.
         /// </summary>
         /// <remarks>
