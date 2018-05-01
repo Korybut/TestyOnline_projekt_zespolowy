@@ -14,11 +14,11 @@ namespace TestOnline
             
             if (Request.Cookies["userLogin"] == null)
             {
-                Response.Redirect("Login.aspx");
+                //Response.Redirect("Login.aspx");
             }
             else
             {
-                Response.Redirect("User.aspx");
+                //Response.Redirect("User.aspx");
             }
         }
     }

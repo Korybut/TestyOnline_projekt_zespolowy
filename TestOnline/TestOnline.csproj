@@ -103,6 +103,7 @@
   <ItemGroup>
     <Content Include="css\style.css" />
     <Content Include="js\UserPopup.js" />
+    <Content Include="test.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -135,6 +136,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
