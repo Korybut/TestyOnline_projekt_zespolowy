@@ -84,6 +84,7 @@
     <Content Include="img\default-avatar.jpg" />
     <Content Include="img\logotyp.png" />
     <Content Include="Login.aspx" />
+    <Content Include="NewPassword.aspx" />
     <Content Include="README.txt" />
     <Content Include="config.json" />
     <Content Include="font\fontello.eot" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewPassword.aspx.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewPassword.aspx.designer.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecoveryPassword.aspx.cs">

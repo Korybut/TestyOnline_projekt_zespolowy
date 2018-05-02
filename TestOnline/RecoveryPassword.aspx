@@ -16,7 +16,7 @@
                 <table align="center">
                     <tr>
                         <td><asp:Label ID="Label1" runat="server" Text="Podaj adres e-mail:"></asp:Label></td>
-                        <td><asp:TextBox ID="TextBox_email" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="TextBox_email" runat="server" Width="230px"></asp:TextBox></td>
                     </tr>
                     <tr>
                         <td colspan="2"><asp:Button ID="Button1" runat="server" Text="Przypomnij hasło" OnClick="Button1_Click" /></td>
