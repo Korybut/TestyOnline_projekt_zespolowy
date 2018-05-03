@@ -13,75 +13,57 @@ namespace TestOnline {
     public partial class User {
         
         /// <summary>
-        /// Kontrolka LoginLabel.
+        /// Kontrolka Label1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LoginLabel;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Kontrolka NameLabel.
+        /// Kontrolka Label2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NameLabel;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Kontrolka RankPositionLabel.
+        /// Kontrolka Label3.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton RankPositionLabel;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Kontrolka PointsLabel.
+        /// Kontrolka Label4.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PointsLabel;
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// Kontrolka PassTestLabel.
+        /// Kontrolka Label5.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PassTestLabel;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// Kontrolka CorrectAnswerLabel.
+        /// Kontrolka Label6.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CorrectAnswerLabel;
-        
-        /// <summary>
-        /// Kontrolka WrongAnswerLabel.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label WrongAnswerLabel;
-        
-        /// <summary>
-        /// Kontrolka EffectiveLabel.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EffectiveLabel;
+        protected global::System.Web.UI.WebControls.Label Label6;
     }
 }

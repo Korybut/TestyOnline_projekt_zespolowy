@@ -70,7 +70,9 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="Categories.aspx" />
     <Content Include="css\animation.css" />
+    <Content Include="css\categories.css" />
     <Content Include="css\fontello-codes.css" />
     <Content Include="css\fontello-embedded.css" />
     <Content Include="css\fontello-ie7-codes.css" />
@@ -82,7 +84,10 @@
     <Content Include="Default.aspx" />
     <Content Include="font\fontello.svg" />
     <Content Include="img\default-avatar.jpg" />
+    <Content Include="img\load.png" />
     <Content Include="img\logotyp.png" />
+    <Content Include="img\plus_button.png" />
+    <Content Include="img\plus_button_h.png" />
     <Content Include="Login.aspx" />
     <Content Include="README.txt" />
     <Content Include="config.json" />
@@ -107,6 +112,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
