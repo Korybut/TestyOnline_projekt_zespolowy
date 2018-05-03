@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="User.aspx.cs" Inherits="TestOnline.User" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="User.aspx.cs" Inherits="TestOnline.User" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Strona użytkownika - tesciki.pl</title>
@@ -33,8 +33,33 @@
             <!-- Do podpięcia liczba zaliczonych testów użytkownika -->
             <asp:Label style="font-size: 1.0em" ID="PassTestLabel" runat="server" Text="Zaliczone testy: 32"></asp:Label>
             </strong>
+            <br />
+            <br />
+            <strong>
+            <!-- Do podpięcia liczba poprawnych odpowiedzi -->
+            <asp:Label style="font-size: 1.0em" ID="CorrectAnswerLabel" runat="server" Text="Poprawne odpowiedzi: 275"></asp:Label>
+            </strong>
+            <br />
+            <br />
+            <strong>
+            <!-- Do podpięcia liczba błędnych odpowiedzi -->
+            <asp:Label style="font-size: 1.0em" ID="WrongAnswerLabel" runat="server" Text="Błędne odpowiedzi: 120"></asp:Label>
+            </strong>
+            <br />
+            <br />
+            <strong>
+            <!-- Do podpięcia skuteczność rozwiązywania egzaminów (obliczana ze wzoru) -->
+            <asp:Label style="font-size: 1.0em" ID="EffectiveLabel" runat="server" Text="Skuteczność: 68%"></asp:Label>
+            </strong>
+        </div>
+
+        <div class="add_category">
+            <center>
+                <a href="Categories.aspx"><img src="img/plus_button.png" /><br /></a>
+                <span>Pobierz kategorie</span>
+            </center>
         </div>
     </div>
     <!-- TABLICA TESTÓW UŻYTKOWNIKA -->
-    <div class="user_wall">sdasdas a</div>
+    <div class="user_wall"> <span>Tutaj będzie miejsce na pobrane kategorie testów.</span></div>
 </asp:Content>

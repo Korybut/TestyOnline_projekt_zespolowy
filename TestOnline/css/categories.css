@@ -1,0 +1,58 @@
+﻿.category_panel {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 11vh;
+    height: 81vh;
+    z-index: -9;
+}
+
+.category {
+    position: relative;
+    float: left;
+    width: 46%;
+    height: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.category .label {
+    position: relative;
+    width: 72%;
+    float: left;
+    height: auto;
+    background-color: #39AB00;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    padding: 4%;
+}
+
+.category .download {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.category .download img {
+    position: relative;
+    width: 45%;
+    height: auto;
+    top: 10px;
+    left: 25px;
+}
+
+.category .content {
+    position: relative;
+    float: left;
+    width: 95%;
+    top: 15px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+}
