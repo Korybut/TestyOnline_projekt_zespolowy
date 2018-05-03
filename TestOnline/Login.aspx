@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/style.css" /> 
     <link rel="stylesheet" href="css/login.css"/>
-    <title>Login</title>
+    <title>Logowanie i Rejestracja</title>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <style type="text/css">
         .auto-style1 {
@@ -25,10 +25,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div><img src="img/logotyp.png" /></div>
+        <div><a href="/"><img src="img/logotyp.png" /></a></div>
         <div class="all">
             <fieldset class="fieldset-login">
             <legend class="legend-login">Logownaie</legend>
+                <asp:Label ID="Label_Lblad" runat="server" Text="Label" ForeColor="Red" CssClass="auto-style3" Visible="False"></asp:Label>
                 <asp:RequiredFieldValidator ID="Error_Login" runat="server" ControlToValidate="TextBox_Llogin" ErrorMessage="Wpisz login!" ValidationGroup="Logowanie" Display="Dynamic" ForeColor="#ff9900" CssClass="auto-style1"></asp:RequiredFieldValidator>
                 <br />
                 <asp:TextBox ID="TextBox_Llogin" runat="server" placeholder="Login" ValidationGroup="Logowanie"></asp:TextBox>

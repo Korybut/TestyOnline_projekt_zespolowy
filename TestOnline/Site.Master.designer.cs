@@ -85,13 +85,13 @@ namespace TestOnline {
         protected global::System.Web.UI.WebControls.Panel Panel_login_popup;
         
         /// <summary>
-        /// Kontrolka LinkButton1.
+        /// Kontrolka LogoutLinkButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton LogoutLinkButton;
         
         /// <summary>
         /// Kontrolka ContentPlaceHolder1.

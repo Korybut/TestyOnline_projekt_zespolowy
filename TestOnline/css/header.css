@@ -1,4 +1,4 @@
-﻿header {
+header {
     background-color: #191d21;
     position: fixed;
     top: 0px;
@@ -12,6 +12,11 @@
     height: 11vh;
     width: 400px;
     max-width: 40%;
+}
+
+.left_div img {
+    left: 10px;
+    top: 10px;
 }
 
 .right_div {
@@ -29,6 +34,13 @@
     float: right;
     text-align: right;
     padding-right: 10px;
+}
+
+.loginLink {
+    color: #ffffff;
+    position: relative;
+    top: 10px;
+    right: 10px
 }
 
 .avatar {
@@ -70,10 +82,10 @@
     z-index: 10;
 }
 
-#UserPopup asp:LinkButton {
+#UserPopup span {
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 

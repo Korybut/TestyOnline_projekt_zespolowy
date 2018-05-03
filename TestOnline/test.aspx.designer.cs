@@ -10,7 +10,7 @@
 namespace TestOnline {
     
     
-    public partial class Login {
+    public partial class test {
         
         /// <summary>
         /// Kontrolka form1.
@@ -22,192 +22,138 @@ namespace TestOnline {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Kontrolka Label_Lblad.
+        /// Kontrolka TextBox1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Lblad;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
-        /// Kontrolka Error_Login.
+        /// Kontrolka TextBox2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Login;
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
         
         /// <summary>
-        /// Kontrolka TextBox_Llogin.
+        /// Kontrolka Button1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Llogin;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Kontrolka Error_Haslo.
+        /// Kontrolka TextBox3.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Haslo;
+        protected global::System.Web.UI.WebControls.TextBox TextBox3;
         
         /// <summary>
-        /// Kontrolka TextBox_Lhaslo.
+        /// Kontrolka Button2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Lhaslo;
+        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// Kontrolka HyperLink1.
+        /// Kontrolka TextBox4.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
-        /// Kontrolka Button_Zaloguj.
+        /// Kontrolka Button3.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Zaloguj;
+        protected global::System.Web.UI.WebControls.Button Button3;
         
         /// <summary>
-        /// Kontrolka Label_Rblad.
+        /// Kontrolka TextBox5.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Rblad;
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
         
         /// <summary>
-        /// Kontrolka Error_Rlogin.
+        /// Kontrolka TextBox6.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Rlogin;
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
         
         /// <summary>
-        /// Kontrolka TextBox_Rlogin.
+        /// Kontrolka Label1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Rlogin;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Kontrolka Error_Remail.
+        /// Kontrolka Label2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Remail;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Kontrolka Error_Remail_zle.
+        /// Kontrolka Label3.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator Error_Remail_zle;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Kontrolka TextBox_Remail.
+        /// Kontrolka TextBox7.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Remail;
+        protected global::System.Web.UI.WebControls.TextBox TextBox7;
         
         /// <summary>
-        /// Kontrolka Error_Rimie.
+        /// Kontrolka Button4.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Rimie;
+        protected global::System.Web.UI.WebControls.Button Button4;
         
         /// <summary>
-        /// Kontrolka TextBox_Rimie.
+        /// Kontrolka Label4.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Rimie;
-        
-        /// <summary>
-        /// Kontrolka Error_Rhaslo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Error_Rhaslo;
-        
-        /// <summary>
-        /// Kontrolka TextBox_Rhaslo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Rhaslo;
-        
-        /// <summary>
-        /// Kontrolka Error_Rphaslo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator Error_Rphaslo;
-        
-        /// <summary>
-        /// Kontrolka TextBox_Rphaslo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Rphaslo;
-        
-        /// <summary>
-        /// Kontrolka Button_Rejestracja.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Rejestracja;
-        
-        /// <summary>
-        /// Kontrolka SqlDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Label Label4;
     }
 }

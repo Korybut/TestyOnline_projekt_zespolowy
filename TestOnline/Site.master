@@ -14,30 +14,31 @@
 <asp:ContentPlaceHolder ID="head" runat="server">
     <!-- Miejsce na dodatkową zawartość head -->
 </asp:ContentPlaceHolder>
+
 </head>
     <body>
         <form id="form1" runat="server">
         <header>
             <!-- Lewy div z logotypem -->
   	        <div class="left_div" style="">
-                  <img id="logotyp" src="img/logotyp.png" alt="tesciki.pl">
+                  <a href="User.aspx"><img id="logotyp" src="img/logotyp.png" alt="tesciki.pl"></a>
   	        </div>
 
             <!-- Prawy div z elementami użytkownika -->
             <div class="right_div" ID="UserPanel" runat="server" onclick="myFunction()">
                 <asp:Panel ID="Panel_login" runat="server">
-                    <img class="avatar" src="img/default-avatar.jpg">
+                    <img class="avatar" src="img/default-avatar.jpg"> <!-- awatar użytkownika -->
                     <div class="labels_div">
                         <asp:Label ID="LabelName" runat="server" Text="imię użytkownika"></asp:Label><br />
                         <asp:Label ID="LabelLogin" runat="server" Text="login użytkownika"></asp:Label>
                     </div>
-                </asp:Panel> 
+                </asp:Panel>
             </div>
 
             <!-- Panel z przyciskiem logowania -->
             <asp:Panel ID="LoginPanel" runat="server">
                         <div class="labels_div">
-                        <a href="Login.aspx">Zaloguj się</a>
+                        <a class="loginLink" href="Login.aspx">Zaloguj się</a>
                     </div>
             </asp:Panel>
 
@@ -45,13 +46,15 @@
             <asp:Panel ID="Panel_login_popup" runat="server">
                 <div id="UserPopup">
                     <span>Ustawienia</span><br />
-                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Wyloguj</asp:LinkButton>
+                    <span><asp:LinkButton ID="LogoutLinkButton" runat="server" OnClick="LogoutLinkButton_Click" Text="Wyloguj"></asp:LinkButton></span>
                 </div>
             </asp:Panel>
         </header>
-            
-             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        
+        <!-- Treść do edycji na każdej z podstron -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
+        <!-- Stopka -->
         <footer id="stopka">
             <div class="socials">
 		        <div class="socialdivs">
@@ -70,9 +73,7 @@
 				    <div style="clear:both"></div>
 			    </div>
 		    </div>
-        </footer>
-            
+        </footer>   
         </form>
-
-        </body>
+    </body>
 </html>
