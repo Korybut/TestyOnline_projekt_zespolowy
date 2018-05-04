@@ -5,77 +5,19 @@
 </asp:Content>
 <asp:Content ID="ContentPlaceHolder1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="category_panel">
-        <div class="category">
-            <div class="label">
-                <asp:Label ID="Label1" runat="server" Text="Nazwa kategorii"></asp:Label>
-            </div>
-            <div class="download"><img src="img/load.png" /></div>
-            <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-            </div>
-        </div>
-        <div class="category">
-            <div class="label">
-                <asp:Label ID="Label2" runat="server" Text="Nazwa kategorii"></asp:Label>
-            </div>
-            <div class="download"><img src="img/load.png" /></div>
-            <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-            </div>
-        </div>
-        <div class="category">
-            <div class="label">
-                <asp:Label ID="Label3" runat="server" Text="Nazwa kategorii"></asp:Label>
-            </div>
-            <div class="download"><img src="img/load.png" /></div>
-            <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-            </div>
-        </div>
-        <div class="category">
-            <div class="label">
-                <asp:Label ID="Label4" runat="server" Text="Nazwa kategorii"></asp:Label>
-            </div>
-            <div class="download"><img src="img/load.png" /></div>
-            <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-            </div>
-        </div>
-        <div class="category">
-            <div class="label">
-                <asp:Label ID="Label5" runat="server" Text="Nazwa kategorii"></asp:Label>
-            </div>
-            <div class="download"><img src="img/load.png" /></div>
-            <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-            </div>
-        </div>
-        <div class="category">
-            <div class="label">
-                <asp:Label ID="Label6" runat="server" Text="Nazwa kategorii"></asp:Label>
-            </div>
-            <div class="download"><img src="img/load.png" /></div>
-            <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.
-            </div>
-        </div>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <div class="category">
+                        <div class="label">
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("nazwa") %>'></asp:Label>
+                        </div>
+                        <div class="download"><a href="link?<%# Eval("id_kategorii") %>"><img src="img/load.png" /></a></div>
+                        <div class="content">
+                            <%# Eval("opis") %>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+            
     </div>
 </asp:Content>
