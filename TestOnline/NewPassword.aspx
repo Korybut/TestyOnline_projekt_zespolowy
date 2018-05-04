@@ -27,7 +27,7 @@
                         <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><asp:Button ID="Button1" runat="server" Text="Przypomnij hasło" /></td>
+                        <td colspan="2"><asp:Button ID="Button1" runat="server" Text="Zmień hasło" /></td>
                     </tr>
                 </table>
                 

@@ -36,21 +36,7 @@ namespace TestOnline
                 }
             }
         }
-
-        private string Odszyfrowanie(string text)
-        {
-            byte[] data = Convert.FromBase64String(text);
-            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
-            {
-                byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-                using (TripleDESCryptoServiceProvider tripDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
-                {
-                    ICryptoTransform transform = tripDes.CreateDecryptor();
-                    byte[] results = transform.TransformFinalBlock(data, 0, data.Length);
-                    return UTF8Encoding.UTF8.GetString(results);
-                }
-            }
-        }
+        
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -63,18 +49,25 @@ namespace TestOnline
 
             if (output == "1")
             {
+                //int id_user = 0;
                 String login = "";
-                String email = "";
-                string query2 = "SELECT login,email FROM UZYTKOWNICY WHERE email='" + TextBox_email.Text + "'";
+                string query2 = "SELECT login FROM UZYTKOWNICY WHERE email='" + TextBox_email.Text + "'";
                 SqlCommand cmd2 = new SqlCommand(query2, con);
                 SqlDataReader reader = cmd2.ExecuteReader();
                 while (reader.Read())
                 {
                     login = reader.GetString(0);
-                    email = reader.GetString(1);
                 }
+                reader.Close();
 
-                String ciag = login + "}" + email + "}" + DateTime.Now;
+                string query3 = "INSERT INTO PRZYPOMNIENIE_HASLA (login,data) VALUES (@s1,@s2)";
+                SqlCommand cmd3 = new SqlCommand(query3, con);
+                cmd3.Parameters.AddWithValue("@s1", login);
+                cmd3.Parameters.AddWithValue("@s2", DateTime.Now);
+                cmd3.ExecuteNonQuery();
+                
+
+                String ciag = login;
                 String ciag_url = Szyfrowanie(ciag);
 
                 var message = new MailMessage();
