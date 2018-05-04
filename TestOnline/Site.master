@@ -4,17 +4,17 @@
 
 <html>
 <head runat="server">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/UserPopup.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/fontello.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-<asp:ContentPlaceHolder ID="head" runat="server">
-    <!-- Miejsce na dodatkową zawartość head -->
-</asp:ContentPlaceHolder>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/UserPopup.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!-- Miejsce na dodatkową zawartość head -->
+    </asp:ContentPlaceHolder>
 </head>
     <body>
         <form id="form1" runat="server">

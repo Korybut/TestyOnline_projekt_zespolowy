@@ -10,7 +10,7 @@
 namespace TestOnline {
     
     
-    public partial class User {
+    public partial class Categories {
         
         /// <summary>
         /// Kontrolka Label1.
