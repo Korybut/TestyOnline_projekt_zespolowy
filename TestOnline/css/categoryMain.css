@@ -1,0 +1,36 @@
+﻿.category_title_panel {
+    position: relative;
+    width: 100%;
+    top: 11vh;
+    height: 10vh;
+    z-index: -10;
+    background-color: #2b2f33;
+    text-align: left;
+    vertical-align: central;
+    display: block;
+    padding-top: 3vh;
+}
+
+.category_title_panel span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.btnCat {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 4vh;
+    top: 12vh;
+    width: 50%;
+    height: 12vh;
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #39AB00;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vh;
+}

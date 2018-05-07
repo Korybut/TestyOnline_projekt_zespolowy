@@ -29,10 +29,17 @@ namespace TestOnline
 
             DataSet ds = GetData();
 
-
             Repeater1.DataSource = ds;
             Repeater1.DataBind();
         }
+
+        protected void rpt_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            
+        }
+
+        
+
         private DataSet GetData()
         {
             string CS = "Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN";
@@ -43,6 +50,11 @@ namespace TestOnline
                 da.Fill(ds);
                 return ds;
             }
+        }
+
+        protected void LoadCategory_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

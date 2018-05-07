@@ -38,9 +38,10 @@
     height: auto;
 }
 
-.category .download img {
+.load_pic {
     position: relative;
     width: 45%;
+    cursor: pointer;
     height: auto;
     top: 10px;
     left: 25px;
