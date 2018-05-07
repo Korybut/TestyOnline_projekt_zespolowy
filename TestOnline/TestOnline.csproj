@@ -72,8 +72,10 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Categories.aspx" />
+    <Content Include="CategoryMain.aspx" />
     <Content Include="css\animation.css" />
     <Content Include="css\categories.css" />
+    <Content Include="css\categoryMain.css" />
     <Content Include="css\fontello-codes.css" />
     <Content Include="css\fontello-embedded.css" />
     <Content Include="css\fontello-ie7-codes.css" />
@@ -121,6 +123,13 @@
     </Compile>
     <Compile Include="Categories.aspx.designer.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryMain.aspx.cs">
+      <DependentUpon>CategoryMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryMain.aspx.designer.cs">
+      <DependentUpon>CategoryMain.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

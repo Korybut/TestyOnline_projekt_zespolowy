@@ -39,11 +39,14 @@
 }
 
 .add_category img:hover {
+    position: relative;
+    top: 0px;
     width: 48px;
     height: 48px;
 }
 
 .add_category img {
+    top: -6px;
     width: 42px;
     height: 42px;
 }
