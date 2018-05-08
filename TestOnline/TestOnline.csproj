@@ -67,12 +67,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ActiveTest.aspx" />
     <Content Include="App_Data\Database.mdf" />
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="Categories.aspx" />
     <Content Include="CategoryMain.aspx" />
+    <Content Include="css\activeTest.css" />
     <Content Include="css\animation.css" />
     <Content Include="css\categories.css" />
     <Content Include="css\categoryMain.css" />
@@ -87,14 +89,13 @@
     <Content Include="Default.aspx" />
     <Content Include="font\fontello.svg" />
     <Content Include="img\default-avatar.jpg" />
+    <Content Include="img\image_icon.png" />
     <Content Include="img\load.png" />
     <Content Include="img\logotyp.png" />
     <Content Include="img\plus_button.png" />
     <Content Include="img\plus_button_h.png" />
     <Content Include="Login.aspx" />
     <Content Include="NewPassword.aspx" />
-    <Content Include="README.txt" />
-    <Content Include="config.json" />
     <Content Include="font\fontello.eot" />
     <Content Include="font\fontello.ttf" />
     <Content Include="font\fontello.woff" />
@@ -117,6 +118,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActiveTest.aspx.cs">
+      <DependentUpon>ActiveTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActiveTest.aspx.designer.cs">
+      <DependentUpon>ActiveTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Categories.aspx.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
