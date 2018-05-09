@@ -189,6 +189,7 @@
     <Compile Include="User.aspx.designer.cs">
       <DependentUpon>User.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test20.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

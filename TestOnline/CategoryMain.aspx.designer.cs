@@ -13,13 +13,13 @@ namespace TestOnline {
     public partial class CategoryMain {
         
         /// <summary>
-        /// Kontrolka Button1.
+        /// Kontrolka StartTest20.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button StartTest20;
         
         /// <summary>
         /// Kontrolka Button2.

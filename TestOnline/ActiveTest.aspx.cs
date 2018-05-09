@@ -11,7 +11,8 @@ namespace TestOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int numer_pytania = 7; // docelowo numer pobierany z klasy odpowiedzialnej za pytania
+            
         }
     }
 }
