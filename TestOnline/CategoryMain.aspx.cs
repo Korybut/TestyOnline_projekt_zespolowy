@@ -64,6 +64,7 @@ namespace TestOnline
             // inkrementacja liczby rozpoczętych testów przez użytkownika (statystyki)
             Session["NumerPytania"] = 0;
             Session["Test20"] = NowyTest; // przekazanie obiektu NowyTest do sesji
+            Response.Redirect("ActiveTest");
         }
     }
 }
