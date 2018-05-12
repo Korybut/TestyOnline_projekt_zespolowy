@@ -8,7 +8,7 @@
     <div class="category_title_panel"><span>Nazwa kategorii testu</span></div>
 
     <div class="question_panel">
-        <!-- numer pytania -->
+        <!-- numer pytania sdaskda -->
         <div id="question_number"><asp:Label ID="NumberLabel" runat="server" Text="0"></asp:Label></div>
         <!-- opcjonalnie (ustawić show/hide) przycisk do wyświetlenia obrazka -->
         <asp:imagebutton runat="server" class="image_icon" ImageUrl="~/img/image_icon.png" AlternateText="Zobacz obrazek"></asp:imagebutton>
