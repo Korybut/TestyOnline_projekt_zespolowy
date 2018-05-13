@@ -11,6 +11,7 @@
 .user_info {
     position: relative;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.2em;
     margin: 10%;
 }
 

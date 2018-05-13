@@ -22,8 +22,8 @@ namespace TestOnline
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    LoginLabel.Text = reader.GetString(0);
-                    NameLabel.Text = reader.GetString(1);
+                    NameLabel.Text = "Witaj " + reader.GetString(1);
+                    //NameLabel.Text = reader.GetString(1);
                 }
                 con.Close();
                 

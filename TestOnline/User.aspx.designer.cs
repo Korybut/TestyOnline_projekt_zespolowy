@@ -13,15 +13,6 @@ namespace TestOnline {
     public partial class User {
         
         /// <summary>
-        /// Kontrolka LoginLabel.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LoginLabel;
-        
-        /// <summary>
         /// Kontrolka NameLabel.
         /// </summary>
         /// <remarks>
