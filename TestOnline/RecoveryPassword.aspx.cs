@@ -75,7 +75,7 @@ namespace TestOnline
                 message.To.Add(new MailAddress(TextBox_email.Text));
                 message.Subject = "Test";
                 message.IsBodyHtml = true;
-                message.Body = "<html><body>Witaj!<br>Prosiłeś o zmiane hasła do swojego konta na Tesciki.pl.<br><br>Kliknij poniższy link aby zmienić hasło. Link ważny przez godzine.<br><br><a href='http://localhost:64162/NewPassword.aspx?RecoveryPassword=" + ciag_url + "' target='_blank'>http://localhost:64162/NewPassword.aspx?" + ciag_url + "</a></body></html>";
+                message.Body = "<html><body>Witaj!<br>Prosiłeś o zmiane hasła do swojego konta na Tesciki.pl.<br><br>Kliknij poniższy link aby zmienić hasło. Link ważny przez godzine.<br><br><a href='http://localhost:64162/NewPassword.aspx?RecoveryPassword=" + ciag_url + "' target='_blank'>http://localhost:64162/NewPassword.aspx?RecoveryPassword=" + ciag_url + "</a></body></html>";
 
                 var smtp = new SmtpClient("smtp.gmail.com");
                 smtp.UseDefaultCredentials = false;
