@@ -20,20 +20,28 @@
                     </tr>
                     <tr>
                         <td>Nowe hasło:</td>
-                        <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="TextBox1" runat="server" TextMode="Password"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Wpisz nowe hasło!" Text="*" ForeColor="Red" ControlToValidate="TextBox1"></asp:RequiredFieldValidator></td>
                     </tr>
                     <tr>
                         <td>Powtórz nowe hasło:</td>
-                        <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox1" ErrorMessage="Hasła muszą być takie same!" Text="*" ForeColor="Red"></asp:CompareValidator>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="2"><asp:Button ID="Button1" runat="server" Text="Zmień hasło" /></td>
                     </tr>
                 </table>
-                
+                <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
                 
             </fieldset>
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TestyOnlineConnectionString %>" SelectCommand="SELECT UZYTKOWNICY.* FROM UZYTKOWNICY" UpdateCommand="UPDATE UZYTKOWNICY SET haslo = @haslo WHERE login = @login">
+            <UpdateParameters>
+                <asp:Parameter Name="haslo" />
+                <asp:Parameter Name="login" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
     </form>
 </body>
 </html>
