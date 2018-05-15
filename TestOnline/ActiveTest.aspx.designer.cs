@@ -31,58 +31,31 @@ namespace TestOnline {
         protected global::System.Web.UI.WebControls.Label ContentLabel;
         
         /// <summary>
-        /// Kontrolka AnswerRB1.
+        /// Kontrolka RadioBTN.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem AnswerRB1;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioBTN;
         
         /// <summary>
-        /// Kontrolka AnswerRB2.
+        /// Kontrolka PrevButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem AnswerRB2;
+        protected global::System.Web.UI.WebControls.Button PrevButton;
         
         /// <summary>
-        /// Kontrolka AnswerRB3.
+        /// Kontrolka NextButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem AnswerRB3;
-        
-        /// <summary>
-        /// Kontrolka AnswerRB4.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem AnswerRB4;
-        
-        /// <summary>
-        /// Kontrolka Button1.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
-        /// Kontrolka Button2.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button NextButton;
         
         /// <summary>
         /// Kontrolka ProgresBar.

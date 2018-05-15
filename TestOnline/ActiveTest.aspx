@@ -20,15 +20,11 @@
             ex ea commodo consequat."></asp:Label>
         </div>
         <!-- radiobutton list do podpięcia z widoku -->
-        <asp:radiobuttonlist class="radio_list" runat="server">
-            <asp:ListItem class="rbtn" ID="AnswerRB1">sed do eiusmod tempor incididunt ut labore</asp:ListItem>
-            <asp:ListItem class="rbtn" ID="AnswerRB2">Ut enim ad minim veniam, quis nostrud</asp:ListItem>
-            <asp:ListItem class="rbtn" ID="AnswerRB3">laboris nisi ut aliquip ex ea commodo consequat</asp:ListItem>
-            <asp:ListItem class="rbtn" ID="AnswerRB4">sed do eiusmod tempor incididunt</asp:ListItem>
-        </asp:radiobuttonlist><br />
+        <asp:radiobuttonlist class="radio_list" ID="RadioBTN" runat="server"></asp:radiobuttonlist>
+        <br />
         <!-- przyciski wstecz i następne pytanie -->
-        <asp:Button ID="Button1" class="prevNextButton" style="left: 3%" runat="server" Text="<" />
-        <asp:Button ID="Button2" class="prevNextButton" style="right: 3%" runat="server" Text=">" />
+        <asp:Button ID="PrevButton" class="prevNextButton" OnClick="Prev_Click" style="left: 3%" runat="server" Text="<" />
+        <asp:Button ID="NextButton" class="prevNextButton" OnClick="Next_Click" style="right: 3%" runat="server" Text=">" />
         <!-- pasek postępu testu -->
         <div class="progresBar_border"></div>
         <div class="progresBar_fill" ID="ProgresBar" runat="server"></div>
