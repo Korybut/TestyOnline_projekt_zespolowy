@@ -7,8 +7,14 @@
         private int countQuestion;
         private string category;
 
-        internal Question[] Questions { get => questions; set => questions = value; }
+
         public string Category { get => category; set => category = value; }
+        public Question[] Questions { get => questions; set => questions = value; }
+
+        public void AddQuestion(Question quest, int index)
+        {
+            questions[index] = quest;
+        }
 
         // domyślny konstruktor ustawiający numer pytania na 0;
         public Test20()
@@ -51,7 +57,7 @@
     }
 
     // klasa opisująca pytanie z całą zawartością
-    class Question
+    public class Question
     {
         private int id;
         private string content;
@@ -60,7 +66,7 @@
         private string ans3;
         private string ans4;
         private int corAns;
-        private int selectedAnswer;
+        private int selectedAnswer = -1; // nie zaznaczone równa się -1
         private string URLImage;
 
         public Question()

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,55 +18,33 @@ namespace TestOnline
 
         protected void StartTest20_Click(object sender, EventArgs e)
         {
+            int ROZMIAR_TESTU = 10;
             Test20 NowyTest = new Test20();
             NowyTest.Category = "Nazwa wybranej kategorii"; // ustawienie kategorii do NowyTest
-            NowyTest.CreateQuestionsArray(20); // utworzenie pustej tablicy o rozmiarze 'n' dla pytań
+            NowyTest.CreateQuestionsArray(ROZMIAR_TESTU); // utworzenie pustej tablicy o rozmiarze 'n' dla pytań
 
-            // załadowanie w pętli 20 losowych pytań do NowyTest (numer, treść, podpowiedzi, poprawna odp.)
-
-            /* for(int i=0; i<20; i++){
-                while(NowyTest.FindQuestionById(numer_id_z_bazy))
-                {
-                    // losuje nowe pytanie z bazy danych.
-                }
-                NowyTest.Questions[i].Id = numer_id_z_bazy;
-                NowyTest.Questions[i].Content = "Treść z bazy";
-                NowyTest.Questions[i].Ans1 = "Treść z bazy";
-                NowyTest.Questions[i].Ans2 = "Treść z bazy";
-                NowyTest.Questions[i].Ans3 = "Treść z bazy";
-                NowyTest.Questions[i].Ans4 = "Treść z bazy";
-                NowyTest.Questions[i].CorAns = wartosc_z_bazy;
-                if( warunek spełniony jeżeli jest obrazek ){
-                    NowyTest.Questions[i].URLImage = "link do obrazka";
-                }
-            } */
-
-            // LUB
-
-            /* for(int i=0; i<20; i++)
+            // połączenie z bazą danych
+            SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
+            con.Open();
+            string query = "SELECT * FROM PYTANIA WHERE id_kategorii=4 ORDER BY NEWID()"; // losowe pobranie pytań z bazy
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            Question[] questArray = new Question[ROZMIAR_TESTU]; // utworzenie tablicy pytań
+            int i = 0;
+            while (reader.Read())
             {
-                while(NowyTest.FindQuestionById(numer_id_z_bazy))
-                {
-                    // losuje nowe pytanie z bazy danych.
-                }
-                NowyTest.Questions[i] = new Question(
-                        numer_id_z_bazy,
-                        "Treść z bazy",
-                        "Treść z bazy",
-                        "Treść z bazy",
-                        "Treść z bazy",
-                        "Treść z bazy",
-                        wartosc_z_bazy
-                    );
-                if( warunek spełniony jeżeli jest obrazek ){
-                    NowyTest.Questions[i].URLImage = "link do obrazka";
-                }
-            } */
-
-            // inkrementacja liczby rozpoczętych testów przez użytkownika (statystyki)
-            Session["NumerPytania"] = 0;
+                questArray[i] = new Question(Convert.ToInt32(reader.GetValue(0)),
+                    reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5),
+                    reader.GetString(6), Convert.ToInt32(reader.GetValue(7)));
+                i++;
+                if (i == ROZMIAR_TESTU-1) break;
+            }
+            con.Close();
+            NowyTest.Questions = questArray; // przypisanie tablicy pytań do zmiennej typu Test20
+            Session["NumerPytania"] = 0; // inkrementacja liczby rozpoczętych testów przez użytkownika (statystyki)
             Session["Test20"] = NowyTest; // przekazanie obiektu NowyTest do sesji
-            Response.Redirect("ActiveTest");
+            Response.Redirect("ActiveTest.aspx");
         }
     }
 }

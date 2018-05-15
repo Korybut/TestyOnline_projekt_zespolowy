@@ -29,32 +29,33 @@
             </strong>
             <br />
             <br />
+            <div style="width: 8vh; height: 3px; background-color: white; display: block;"></div>
             <!-- Do podpięcia liczba punktów użytkownika -->
             <strong>
-            <p><asp:Label style="font-size: 0.9em" ID="PointsLabel" runat="server" Text="Liczba zdobytych punktów: 10 025"></asp:Label></p>
+            <p><asp:Label style="font-size: 0.8em" ID="PointsLabel" runat="server" Text="Liczba zdobytych punktów: 10 025"></asp:Label></p>
             </strong>
             <strong>
             <!-- Do podpięcia liczba zaliczonych testów użytkownika -->
-            <p><asp:Label style="font-size: 0.9em" ID="PassTestLabel" runat="server" Text="Zaliczone testy: 32"></asp:Label></p>
+            <p><asp:Label style="font-size: 0.8em" ID="PassTestLabel" runat="server" Text="Zaliczone testy: 32"></asp:Label></p>
             </strong>
             <strong>
             <!-- Do podpięcia liczba poprawnych odpowiedzi -->
-            <p><asp:Label style="font-size: 0.9em" ID="CorrectAnswerLabel" runat="server" Text="Poprawne odpowiedzi: 275"></asp:Label></p>
+            <p><asp:Label style="font-size: 0.8em" ID="CorrectAnswerLabel" runat="server" Text="Poprawne odpowiedzi: 275"></asp:Label></p>
             </strong>
             <strong>
             <!-- Do podpięcia liczba błędnych odpowiedzi -->
-            <p><asp:Label style="font-size: 0.9em" ID="WrongAnswerLabel" runat="server" Text="Błędne odpowiedzi: 120"></asp:Label></p>
+            <p><asp:Label style="font-size: 0.8em" ID="WrongAnswerLabel" runat="server" Text="Błędne odpowiedzi: 120"></asp:Label></p>
             </strong>
             <strong>
             <!-- Do podpięcia skuteczność rozwiązywania egzaminów (obliczana ze wzoru) -->
-            <asp:Label style="font-size: 0.9em" ID="EffectiveLabel" runat="server" Text="Skuteczność: 68%"></asp:Label>
+            <asp:Label style="font-size: 0.8em" ID="EffectiveLabel" runat="server" Text="Skuteczność: 68%"></asp:Label>
             </strong>
         </div>
 
         <div class="add_category">
             <center>
                 <a href="Categories.aspx"><img src="img/plus_button.png" /><br /></a>
-                <span>Wybierz kategorie testu</span>
+                <span>wybierz test</span>
             </center>
         </div>
     </div>
