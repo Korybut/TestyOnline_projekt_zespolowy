@@ -103,7 +103,7 @@
         // metoda porównuje poprawną odpowiedź z zaznaczoną i zwraca true jeśli są takie same lub false jeżeli różne
         public bool CompareAnswerWithSelected()
         {
-            return corAns.Equals(selectedAnswer);
+            return corAns.Equals(selectedAnswer+1);
         }
     }
 }

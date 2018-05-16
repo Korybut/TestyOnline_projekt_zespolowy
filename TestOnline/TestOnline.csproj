@@ -85,6 +85,7 @@
     <Content Include="css\fontello.css" />
     <Content Include="css\header.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\resultTest.css" />
     <Content Include="css\user.css" />
     <Content Include="Default.aspx" />
     <Content Include="font\fontello.svg" />
@@ -102,6 +103,7 @@
     <Content Include="font\fontello.woff2" />
     <None Include="packages.config" />
     <Content Include="RecoveryPassword.aspx" />
+    <Content Include="ResultTest.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -167,6 +169,13 @@
     </Compile>
     <Compile Include="RecoveryPassword.aspx.designer.cs">
       <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultTest.aspx.cs">
+      <DependentUpon>ResultTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultTest.aspx.designer.cs">
+      <DependentUpon>ResultTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

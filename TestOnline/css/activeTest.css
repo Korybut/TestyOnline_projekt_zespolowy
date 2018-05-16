@@ -97,7 +97,27 @@ input[type="radio"] {
     margin-top: 20px;
 }
 
-.prevNextButton {
+.resultButton {
+    position: fixed;
+    background-color: #39AB00;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 240px;
+    height: 52px;
+    font-size: 26px;
+    font-weight: 600;
+    bottom: 11vh;
+    right: 3%;
+}
+
+.resultButton:hover {
+    background-color: #5BCD22;
+    cursor: pointer;
+}
+
+.prevButton {
     position: fixed;
     bottom: 11vh;
     width: 45px;
@@ -109,10 +129,60 @@ input[type="radio"] {
     color: white;
     font-size: 22px;
     font-weight: 800;
+    left: 3%;
 }
 
-.prevNextButton:hover {
+.nextButton {
+    position: fixed;
+    background-color: #39AB00;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    font-weight: 800;
+    bottom: 11vh;
+    right: 3%;
+    -webkit-animation: animacjaNext 3s infinite;
+    animation: animacjaNext 3s infinite;
+}
+
+.prevButton:hover {
     background-color: #5BCD22;
+    cursor: pointer;
+}
+
+.nextButton:hover {
+    background-color: #5BCD22;
+    cursor: pointer;
+    animation: none;
+    -webkit-animation: none;
+}
+
+@-webkit-keyframes animacjaNext {
+    from {
+        background-color: #39AB00;
+        color: #ffffff;
+    }
+
+    to {
+        background-color: #e7ffcf;
+        color: #39AB00;
+    }
+}
+
+@keyframes animacjaNext {
+    from {
+        background-color: #39AB00;
+        color: #ffffff;
+    }
+
+    to {
+        background-color: #e7ffcf;
+        color: #39AB00;
+    }
 }
 
 .progresBar_border {
