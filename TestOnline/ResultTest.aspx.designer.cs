@@ -10,69 +10,60 @@
 namespace TestOnline {
     
     
-    public partial class ActiveTest {
+    public partial class ResultTest {
         
         /// <summary>
-        /// Kontrolka NumberLabel.
+        /// Kontrolka HeadLabel.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NumberLabel;
+        protected global::System.Web.UI.WebControls.Label HeadLabel;
         
         /// <summary>
-        /// Kontrolka ContentLabel.
+        /// Kontrolka ResultLabel.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ContentLabel;
+        protected global::System.Web.UI.WebControls.Label ResultLabel;
         
         /// <summary>
-        /// Kontrolka RadioBTN.
+        /// Kontrolka StatusLabel.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioBTN;
+        protected global::System.Web.UI.WebControls.Label StatusLabel;
         
         /// <summary>
-        /// Kontrolka PrevButton.
+        /// Kontrolka ShowTestButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PrevButton;
+        protected global::System.Web.UI.WebControls.Button ShowTestButton;
         
         /// <summary>
-        /// Kontrolka NextButton.
+        /// Kontrolka HomeButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NextButton;
+        protected global::System.Web.UI.WebControls.LinkButton HomeButton;
         
         /// <summary>
-        /// Kontrolka ResultButton.
+        /// Kontrolka RestartButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ResultButton;
-        
-        /// <summary>
-        /// Kontrolka ProgresBar.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProgresBar;
+        protected global::System.Web.UI.WebControls.LinkButton RestartButton;
     }
 }
