@@ -18,13 +18,14 @@
     margin-right: 2%;
 }
 
-.category .button {
+.button {
     position: relative;
     width: 72%;
     float: left;
     height: auto;
     background-color: #39AB00;
     text-decoration: none;
+    border: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
@@ -33,7 +34,7 @@
     padding: 4%;
 }
 
-.category .button:hover {
+.button:hover {
     cursor: pointer;
     background-color: #5BCD00;
 }
