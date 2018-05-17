@@ -11,9 +11,10 @@ namespace TestOnline
 {
     public partial class CategoryMain : System.Web.UI.Page
     {
+        string id_kategorii;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            id_kategorii = Session["ID_kategorii"].ToString();
         }
 
         protected void StartTest20_Click(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace TestOnline
             // połączenie z bazą danych
             SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
             con.Open();
-            string query = "SELECT * FROM PYTANIA WHERE id_kategorii=4 ORDER BY NEWID()"; // losowe pobranie pytań z bazy
+            string query = "SELECT * FROM PYTANIA WHERE id_kategorii=" + id_kategorii + " ORDER BY NEWID()"; // losowe pobranie pytań z bazy
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader reader = cmd.ExecuteReader();
             Question[] questArray = new Question[ROZMIAR_TESTU]; // utworzenie tablicy pytań

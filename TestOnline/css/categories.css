@@ -18,12 +18,14 @@
     margin-right: 2%;
 }
 
-.category .label {
+.category .button {
     position: relative;
     width: 72%;
     float: left;
     height: auto;
     background-color: #39AB00;
+    text-decoration: none;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
     font-weight: 600;
@@ -31,11 +33,9 @@
     padding: 4%;
 }
 
-.category .download {
-    position: relative;
-    float: left;
-    width: 20%;
-    height: auto;
+.category .button:hover {
+    cursor: pointer;
+    background-color: #5BCD00;
 }
 
 .load_pic {

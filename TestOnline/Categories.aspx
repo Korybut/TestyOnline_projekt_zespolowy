@@ -5,15 +5,10 @@
 </asp:Content>
 <asp:Content ID="ContentPlaceHolder1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="category_panel">
-            <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="rpt_ItemCommand">
+            <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <div class="category">
-                        <div class="label">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("nazwa") %>'></asp:Label>
-                        </div>
-                        <div class="download">
-                            <asp:ImageButton ID="LoadCategoryButton" OnClick="LoadCategory_Click" class="load_pic" runat="server" ImageUrl="~/img/load.png" ClientIDMode="Inherit" />
-                        </div>
+                        <asp:Button ID="Button" class="button" runat="server" OnClick="LoadCategory_Click" CommandArgument='<%# Eval("id_kategorii") %>' Text='<%# Eval("nazwa") %>'/>
                         <div class="content">
                             <%# Eval("opis") %>
                         </div>
