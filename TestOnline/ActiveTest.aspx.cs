@@ -19,11 +19,16 @@ namespace TestOnline
             numerPytania = count + 1;
             test20 = (Test20)Session["Test20"];
 
+            ResultButton.Visible = false;
             if (count == 0) PrevButton.Visible = false;
-            else if (count == test20.Questions.Length - 1) NextButton.Visible = false;
+            else if (count == test20.Questions.Length - 1)
+            {
+                NextButton.Visible = false;
+                ResultButton.Visible = true;
+            }
 
             NumberLabel.Text = numerPytania.ToString(); // ustawienie numeru pytania na etykiecie
-            ProgresBar.Style.Add("width", ((int)(60/(20/numerPytania))).ToString() + "%"); // ustawienie długości paska postępu
+            //ProgresBar.Style.Add("width", ((int)(60/(20/numerPytania))).ToString() + "%"); // ustawienie długości paska postępu
             ContentLabel.Text = test20.Questions[count].Content;
             RadioBTN.Items.Add(new ListItem(test20.Questions[count].Ans1));
             RadioBTN.Items.Add(new ListItem(test20.Questions[count].Ans2));
@@ -59,6 +64,12 @@ namespace TestOnline
             Session["NumerPytania"] = count - 1; // inkrementacja liczby rozpoczętych testów przez użytkownika (statystyki)
             Session["Test20"] = test20; // przekazanie obiektu NowyTest do sesji
             Response.Redirect("ActiveTest.aspx");
+        }
+
+        protected void Result_Click(object sender, EventArgs e)
+        {
+            Session["Test20"] = test20; // przekazanie obiektu NowyTest do sesji
+            Response.Redirect("ResultTest.aspx");
         }
     }
 }

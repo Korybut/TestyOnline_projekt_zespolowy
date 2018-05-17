@@ -23,11 +23,12 @@
         <asp:radiobuttonlist class="radio_list" ID="RadioBTN" runat="server"></asp:radiobuttonlist>
         <br />
         <!-- przyciski wstecz i następne pytanie -->
-        <asp:Button ID="PrevButton" class="prevNextButton" OnClick="Prev_Click" style="left: 3%" runat="server" Text="<" />
-        <asp:Button ID="NextButton" class="prevNextButton" OnClick="Next_Click" style="right: 3%" runat="server" Text=">" />
+        <asp:Button ID="PrevButton" class="prevButton" OnClick="Prev_Click" style="left: 3%" runat="server" Text="<" />
+        <asp:Button ID="NextButton" class="nextButton" OnClick="Next_Click" style="right: 3%" runat="server" Text=">" />
+        <asp:Button ID="ResultButton" class="resultButton" OnClick="Result_Click" runat="server" Text="Sprawdź wynik" />
         <!-- pasek postępu testu -->
-        <div class="progresBar_border"></div>
-        <div class="progresBar_fill" ID="ProgresBar" runat="server"></div>
+        <!-- <div class="progresBar_border"></div>
+        <div class="progresBar_fill" ID="ProgresBar" runat="server"></div> -->
     </div>
 
 

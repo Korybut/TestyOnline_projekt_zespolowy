@@ -19,7 +19,7 @@ namespace TestOnline
 
         protected void StartTest20_Click(object sender, EventArgs e)
         {
-            int ROZMIAR_TESTU = 10;
+            int ROZMIAR_TESTU = 10; // liczba pytań w teście
             Test20 NowyTest = new Test20();
             NowyTest.Category = "Nazwa wybranej kategorii"; // ustawienie kategorii do NowyTest
             NowyTest.CreateQuestionsArray(ROZMIAR_TESTU); // utworzenie pustej tablicy o rozmiarze 'n' dla pytań
@@ -39,7 +39,7 @@ namespace TestOnline
                     reader.GetString(4), reader.GetString(5),
                     reader.GetString(6), Convert.ToInt32(reader.GetValue(7)));
                 i++;
-                if (i == ROZMIAR_TESTU-1) break;
+                if (i == ROZMIAR_TESTU) break;
             }
             con.Close();
             NowyTest.Questions = questArray; // przypisanie tablicy pytań do zmiennej typu Test20
