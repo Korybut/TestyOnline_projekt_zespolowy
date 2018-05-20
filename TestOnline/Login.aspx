@@ -16,6 +16,7 @@
         }
         .auto-style2 {
             color: #FFFFFF;
+            padding: 10px;
             background-color: #4CA400;
         }
         .auto-style3 {
@@ -27,7 +28,7 @@
     <form id="form1" runat="server">
         <div><a href="/"><img src="img/logotyp.png" /></a></div>
         <div class="all">
-            <fieldset class="fieldset-login">
+            <fieldset class="fieldset-login" ID="fieldsetLogin" runat="server">
             <legend class="legend-login">Logownaie</legend>
                 <asp:Label ID="Label_Lblad" runat="server" Text="Label" ForeColor="Red" CssClass="auto-style3" Visible="False"></asp:Label>
                 <asp:RequiredFieldValidator ID="Error_Login" runat="server" ControlToValidate="TextBox_Llogin" ErrorMessage="Wpisz login!" ValidationGroup="Logowanie" Display="Dynamic" ForeColor="#ff9900" CssClass="auto-style1"></asp:RequiredFieldValidator>
@@ -41,9 +42,10 @@
                 <asp:HyperLink ID="HyperLink1" runat="server" CssClass="link" NavigateUrl="~/RecoveryPassword.aspx" style="color: #3399FF; font-size: 0.8em;">Przypomnij hasło</asp:HyperLink>
                 <br />
                 <asp:Button ID="Button_Zaloguj" runat="server" Text="Zaloguj" ValidationGroup="Logowanie" OnClick="Button_Zaloguj_Click" BorderStyle="None" CssClass="auto-style2" />
+                <br />
+                <asp:LinkButton ID="NoAccountButton" runat="server" OnClick="NoAccount_Click" CssClass="link" style="color: #3399FF; font-size: 0.8em;">Nie posiadasz konta? Zarejestruj się!</asp:LinkButton>
             </fieldset>
-            
-            <fieldset class="fieldset-register">
+            <fieldset class="fieldset-register" id="panelRejestracja" runat="server">
             <legend class="legend-register">Rejestracja</legend>
                 <asp:Label ID="Label_Rblad" runat="server" Text="Label" ForeColor="Red" CssClass="auto-style3" Visible="False"></asp:Label>
                 <asp:RequiredFieldValidator ID="Error_Rlogin" runat="server" ControlToValidate="TextBox_Rlogin" Display="Dynamic" ErrorMessage="Wpisz login!" ForeColor="#ff9900" ValidationGroup="Rejestracja" CssClass="auto-style3"></asp:RequiredFieldValidator>
