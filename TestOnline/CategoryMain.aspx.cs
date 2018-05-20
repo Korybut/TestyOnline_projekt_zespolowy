@@ -11,9 +11,11 @@ namespace TestOnline
 {
     public partial class CategoryMain : System.Web.UI.Page
     {
+       
         string id_kategorii;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["ID_kategorii"] = 4;
             id_kategorii = Session["ID_kategorii"].ToString();
         }
 
@@ -22,6 +24,7 @@ namespace TestOnline
             int ROZMIAR_TESTU = 10; // liczba pytań w teście
             Test20 NowyTest = new Test20();
             NowyTest.Category = "Nazwa wybranej kategorii"; // ustawienie kategorii do NowyTest
+            NowyTest.Id_category = Convert.ToInt32(id_kategorii);
             NowyTest.CreateQuestionsArray(ROZMIAR_TESTU); // utworzenie pustej tablicy o rozmiarze 'n' dla pytań
 
             // połączenie z bazą danych
