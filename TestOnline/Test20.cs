@@ -4,12 +4,13 @@
     {
         private int QUEST_NUM;
         private Question[] questions;
-        private int countQuestion;
+        private int id_category;
         private string category;
 
 
         public string Category { get => category; set => category = value; }
         public Question[] Questions { get => questions; set => questions = value; }
+        public int Id_category { get => id_category; set => id_category = value; }
 
         public void AddQuestion(Question quest, int index)
         {
@@ -19,7 +20,7 @@
         // domyślny konstruktor ustawiający numer pytania na 0;
         public Test20()
         {
-            countQuestion = 0;
+ 
         }
 
         // metoda tworząca tablicę pytań o rozmiarze podanym w parametrze (standardowo będzie to 20 lub ilość pytań w bazie)

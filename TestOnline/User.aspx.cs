@@ -25,6 +25,14 @@ namespace TestOnline
                     NameLabel.Text = "Witaj " + reader.GetString(1);
                     //NameLabel.Text = reader.GetString(1);
                 }
+                reader.Close();
+                query = "SELECT SUM(zdobyte_punkty) FROM TESTY WHERE id_uzytkownika=(SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login='" + login + "')";
+                cmd = new SqlCommand(query, con);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    PointsLabel.Text = reader.GetInt32(0).ToString();
+                }
                 con.Close();
                 
             }
