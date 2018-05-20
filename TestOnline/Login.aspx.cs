@@ -20,6 +20,7 @@ namespace TestOnline
             {
                 Response.Redirect("User.aspx");
             }
+            panelRejestracja.Visible = false;
         }
 
         public string GetMD5(string text)
@@ -54,6 +55,12 @@ namespace TestOnline
             return text + salt;
         }
 
+        protected void NoAccount_Click(object sender, EventArgs e)
+        {
+            NoAccountButton.Visible = false;
+            fieldsetLogin.Style.Add("margin-left", "5px");
+            panelRejestracja.Visible = true;
+        }
 
         protected void Button_Zaloguj_Click(object sender, EventArgs e)
         {
