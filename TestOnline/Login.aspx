@@ -29,7 +29,7 @@
         <div><a href="/"><img src="img/logotyp.png" /></a></div>
         <div class="all">
             <fieldset class="fieldset-login" ID="fieldsetLogin" runat="server">
-            <legend class="legend-login">Logownaie</legend>
+            <legend class="legend-login">Logowanie</legend>
                 <asp:Label ID="Label_Lblad" runat="server" Text="Label" ForeColor="Red" CssClass="auto-style3" Visible="False"></asp:Label>
                 <asp:RequiredFieldValidator ID="Error_Login" runat="server" ControlToValidate="TextBox_Llogin" ErrorMessage="Wpisz login!" ValidationGroup="Logowanie" Display="Dynamic" ForeColor="#ff9900" CssClass="auto-style1"></asp:RequiredFieldValidator>
                 <br />

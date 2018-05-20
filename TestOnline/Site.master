@@ -56,23 +56,8 @@
 
         <!-- Stopka -->
         <footer id="stopka">
-            <div class="socials">
-		        <div class="socialdivs">
-			        <div class="fb" dir="rtl">
-				        <a href="https://www.facebook.com" target="_blank" class="sclink"><i class="icon-facebook"></i></a>
-				    </div>
-			        <div class="yt">
-					    <a href="https://www.youtube.com" target="_blank" class="sclink"><i class="icon-youtube"></i></a>
-				    </div>
-				    <div class="tw">
-					    <a href="https://www.twitter.com" target="_blank" class="sclink"><i class="icon-twitter"></i></a>
-				    </div>
-				    <div class="gplus">
-					    <a href="https://www.plus.google.com" target="_blank" class="sclink"><i class="icon-gplus"></i></a>
-				    </div>
-				    <div style="clear:both"></div>
-			    </div>
-		    </div>
+            <br />
+            <span>© 2018 Tesciki.pl - Baza testów online</span>
         </footer>   
         </form>
     </body>
