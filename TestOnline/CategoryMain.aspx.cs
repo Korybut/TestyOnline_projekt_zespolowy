@@ -21,7 +21,7 @@ namespace TestOnline
 
         protected void StartTest20_Click(object sender, EventArgs e)
         {
-            int ROZMIAR_TESTU = 10; // liczba pytań w teście
+            int ROZMIAR_TESTU = 20; // liczba pytań w teście
             Test20 NowyTest = new Test20();
             NowyTest.Category = "Nazwa wybranej kategorii"; // ustawienie kategorii do NowyTest
             NowyTest.Id_category = Convert.ToInt32(id_kategorii);
