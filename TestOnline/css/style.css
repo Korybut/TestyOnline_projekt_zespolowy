@@ -30,72 +30,18 @@ body {
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
+    text-align: center;
+}
+
+#stopka span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
 }
 
 h1.logo {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.socials {
-    width: 100%;
-    text-align: center;
-    background-color: #191d21;
-}
-
-.socialdivs {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.fb {
-    width: 25%;
-    height: 8%;
-    float: left;
-}
-
-.fb:hover {
-	background-color: #4668b3;
-}
-
-.yt {
-    width: 25%;
-    height: 8%;
-    float: left;
-}
-
-.yt:hover {
-	background-color: #d94348;
-}
-
-.gplus {
-    width: 25%;
-    height: 8%;
-    float: left;
-}
-
-.gplus:hover {
-	background-color: #d95333;
-}
-
-.tw {
-    width: 25%;
-    height: 8%;
-    float: left;
-}
-
-.tw:hover {
-	background-color: #3095d3;
-}
-
-a.sclink {
-    text-decoration: none;
-    color: #ffffff;
-    width: 20%;
-    height: 20%;
-
 }
 
 .info {

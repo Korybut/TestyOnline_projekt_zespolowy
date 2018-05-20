@@ -1,0 +1,68 @@
+﻿.centerPanel {
+    position: fixed;
+    width: 40%;
+    left: 30%;
+    text-align: center;
+    top: 11vh;
+    height: 61vh;
+}
+
+.bottomPanel {
+    position: fixed;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    top: 76vh;
+    height: 10vh;
+}
+
+.centerPanel h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.0em;
+    color: #4CA400;
+}
+
+.about {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+}
+
+.cookiesInfo {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
+    bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+}
+
+.legend-cookies {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #4CA400;
+    margin-left: 2em;
+    padding: 0.2em 0.8em
+}
+
+.resultButton:hover {
+    background-color: #5BCD22;
+    cursor: pointer;
+}
+
+.SignButton {
+    background-color: #39AB00;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 240px;
+    height: 52px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.SignButton:hover {
+    background-color: #5BCD22;
+    cursor: pointer;
+}
