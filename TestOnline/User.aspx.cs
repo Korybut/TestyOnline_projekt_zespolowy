@@ -42,44 +42,55 @@ namespace TestOnline
                 NameLabel.Text = "Witaj " + reader.GetString(1);
             }
             reader.Close();
-            /* pobranie ilosci poprawnych odpowiedzi i wszystkich odbytych testów */
-            query = "SELECT SUM(zdobyte_punkty), COUNT(*) FROM TESTY WHERE id_uzytkownika=(SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login='" + login + "')";
-            cmd = new SqlCommand(query, con);
-            reader = cmd.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                correctAnswers = reader.GetInt32(0);
-                countTests = reader.GetInt32(1);
+                /* pobranie ilosci poprawnych odpowiedzi i wszystkich odbytych testów */
+                query = "SELECT SUM(zdobyte_punkty), COUNT(*) FROM TESTY WHERE id_uzytkownika=(SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login='" + login + "')";
+                cmd = new SqlCommand(query, con);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    correctAnswers = reader.GetInt32(0);
+                    countTests = reader.GetInt32(1);
 
+                }
+                reader.Close();
+                // obliczenie niepoprawnych odpowiedzi
+                incorrectAnswers = (countTests * 20) - correctAnswers;
+                /* pobranie iloœci zaliczonych testów (zaliczenie od 50% poprawnych odpowiedzi) */
+                query = "SELECT COUNT(*) FROM TESTY WHERE id_uzytkownika=10 AND zdobyte_punkty > 9";
+                cmd = new SqlCommand(query, con);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    passTests = reader.GetInt32(0);
+                }
+                con.Close();
+                // obliczenie efektywnoœci ze wzoru: 100 / iloœæ pytañ / poprawne odpowiedzi
+                if (correctAnswers == 0)
+                {
+                    effective = 0;
+                }
+                else
+                {
+                    effective = (int)((double)100 / (((double)20.0 * countTests) / (double)correctAnswers));
+                }
+                // ustawienie wartoœci na etykiety
+                PassTestLabel.Text = "Zaliczone testy: " + passTests.ToString();
+                EffectiveLabel.Text = "Skutecznoœæ: " + effective.ToString() + "%";
+                CorrectAnswerLabel.Text = "Poprawne odpowiedzi: " + correctAnswers.ToString();
+                WrongAnswerLabel.Text = "B³êdne odpowiedzi: " + incorrectAnswers.ToString();
+                // punkty obliczane ze wzoru: poprawne odpowiedzi * efektywnoœæ
+                PointsLabel.Text = "Liczba zdobytych punktów: " + (correctAnswers * effective).ToString();
             }
-            reader.Close();
-            // obliczenie niepoprawnych odpowiedzi
-            incorrectAnswers = (countTests * 20) - correctAnswers;
-            /* pobranie iloœci zaliczonych testów (zaliczenie od 50% poprawnych odpowiedzi) */
-            query = "SELECT COUNT(*) FROM TESTY WHERE id_uzytkownika=10 AND zdobyte_punkty > 9";
-            cmd = new SqlCommand(query, con);
-            reader = cmd.ExecuteReader();
-            while (reader.Read())
+            catch(Exception e)
             {
-                passTests = reader.GetInt32(0);
+                PassTestLabel.Text = "Zaliczone testy: 0";
+                EffectiveLabel.Text = "Skutecznoœæ: 0%";
+                CorrectAnswerLabel.Text = "Poprawne odpowiedzi: 0";
+                WrongAnswerLabel.Text = "B³êdne odpowiedzi: 0";
+                PointsLabel.Text = "Liczba zdobytych punktów: 0";
             }
-            con.Close();
-            // obliczenie efektywnoœci ze wzoru: 100 / iloœæ pytañ / poprawne odpowiedzi
-            if(correctAnswers == 0)
-            {
-                effective = 0;
-            }
-            else
-            {
-                effective = (int)((double)100 / (((double)20.0 * countTests) / (double)correctAnswers));
-            }
-            // ustawienie wartoœci na etykiety
-            PassTestLabel.Text = "Zaliczone testy: " + passTests.ToString();
-            EffectiveLabel.Text = "Skutecznoœæ: " + effective.ToString() + "%";
-            CorrectAnswerLabel.Text = "Poprawne odpowiedzi: " + correctAnswers.ToString();
-            WrongAnswerLabel.Text = "B³êdne odpowiedzi: " + incorrectAnswers.ToString();
-            // punkty obliczane ze wzoru: poprawne odpowiedzi * efektywnoœæ
-            PointsLabel.Text = "Liczba zdobytych punktów: " + (correctAnswers * effective).ToString();
         }
 
         protected void RightPanel_Load()
