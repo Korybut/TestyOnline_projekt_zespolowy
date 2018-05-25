@@ -103,6 +103,7 @@
     <Content Include="font\fontello.woff" />
     <Content Include="font\fontello.woff2" />
     <None Include="packages.config" />
+    <Content Include="Ranking.aspx" />
     <Content Include="RecoveryPassword.aspx" />
     <Content Include="ResultTest.aspx" />
     <Content Include="Site.Master" />
@@ -164,6 +165,14 @@
       <DependentUpon>NewPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rank.cs" />
+    <Compile Include="Ranking.aspx.cs">
+      <DependentUpon>Ranking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ranking.aspx.designer.cs">
+      <DependentUpon>Ranking.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RecoveryPassword.aspx.cs">
       <DependentUpon>RecoveryPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -18,7 +18,8 @@
             <br />
             <!-- Trzeba skonfigurować linkButton z rankingiem i ustawiać aktualną pozycję użytkownika -->
             <strong>
-            <asp:LinkButton style="font-size: 1.1em; text-decoration: none" ID="RankPositionLabel" runat="server" ForeColor="#009400">Twoja pozycja w rankingu: 142</asp:LinkButton>
+            <asp:LinkButton style="font-size: 1.1em; text-decoration: none" ID="RankPositionLabel" 
+                OnClick="RankPosition_Clicked" runat="server" ForeColor="#009400">Twoja pozycja w rankingu: 142</asp:LinkButton>
             </strong>
             <br />
             <br />
