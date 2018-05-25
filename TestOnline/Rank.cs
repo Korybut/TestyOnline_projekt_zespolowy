@@ -12,11 +12,13 @@ namespace TestOnline
     {
         private string[] logins;
         private int[] points;
+        private int[] temp;
 
         public Rank(int size)
         {
             logins = new string[size];
             points = new int[size];
+            temp = new int[size];
         }
 
         public void PrepareRank()
@@ -90,6 +92,7 @@ namespace TestOnline
                 }
 
                 points[x] = (correctAnswers * effective);
+                temp[x] = (correctAnswers * effective);
             }
             con.Close();
         }
@@ -104,6 +107,33 @@ namespace TestOnline
             return points;
         }
 
+        /* zwraca loginy użytkowników w sposób posortowany w kolejności od malejącej (punktacja) */
+        public string[] GetLoginsSortedOfPosition()
+        {
+            string[] list = new string[logins.Length];
+
+            int valueMAX = 0;
+            int indexMAX = -1;
+
+            for(int i=0; i<temp.Length; i++)
+            {
+                valueMAX = temp[i];
+                indexMAX = i;
+                for(int y=0; y<temp.Length; y++)
+                {
+                    if(temp[y] > valueMAX)
+                    {
+                        indexMAX = y;
+                        valueMAX = temp[y];
+                    }
+                }
+                list[i] = logins[indexMAX];
+                temp[indexMAX] = -1;
+            }
+            return list;
+        }
+
+        /* zwraca pozycję użytkownika */
         public int GetUserRankPosition(string login)
         {
             int index = Array.IndexOf(logins, login);
@@ -115,6 +145,13 @@ namespace TestOnline
                 if (i > pointsValue) position++;
             }
             return position;
+        }
+
+        /* zwraca punkty danego użytkownika */
+        public int GetUserPoints(string login)
+        {
+            int index = Array.IndexOf(logins, login);
+            return points[index];
         }
 
     }
