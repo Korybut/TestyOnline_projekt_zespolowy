@@ -1,0 +1,57 @@
+﻿.podiumPanel {
+    position: fixed;
+    width: 90%;
+    display: block;
+    top: 13vh;
+    height: auto;
+    left: 10%;
+    z-index: -9;
+}
+
+.places1 {
+    position: relative;
+    float: left;
+    width: 34%;
+    height: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    font-weight: 600;
+    line-height: 0.8em;
+}
+
+.places1 img {
+    width: 22vh; 
+    height: auto
+}
+
+.places2 {
+    position: relative;
+    float: left;
+    width: 28%;
+    height: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    top: 6vh;
+    font-size: 3vh;
+    font-weight: 600;
+    line-height: 0.8em;
+}
+
+.places2 img {
+    width: 16vh;
+    height: auto;
+}
+
+.rank {
+    position: fixed;
+    width: 100%;
+    top: 50vh;
+    height: auto;
+    left: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vh;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: center;
+}
