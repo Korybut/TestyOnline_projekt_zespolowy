@@ -42,6 +42,22 @@ namespace TestOnline
                 NameLabel.Text = "Witaj " + reader.GetString(1);
             }
             reader.Close();
+
+            int size = 0;
+            query = "SELECT COUNT(*) FROM UZYTKOWNICY";
+            cmd = new SqlCommand(query, con);
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                size = reader.GetInt32(0);
+            }
+            reader.Close();
+
+            Rank rank = new Rank(size);
+            rank.PrepareRank();
+            int value = rank.GetUserRankPosition(login);
+            RankPositionLabel.Text = "Twoja pozycja w rankingu: " + value;
+
             try
             {
                 /* pobranie ilosci poprawnych odpowiedzi i wszystkich odbytych testów */
@@ -58,7 +74,7 @@ namespace TestOnline
                 // obliczenie niepoprawnych odpowiedzi
                 incorrectAnswers = (countTests * 20) - correctAnswers;
                 /* pobranie iloœci zaliczonych testów (zaliczenie od 50% poprawnych odpowiedzi) */
-                query = "SELECT COUNT(*) FROM TESTY WHERE id_uzytkownika=10 AND zdobyte_punkty > 9";
+                query = "SELECT COUNT(*) FROM TESTY WHERE id_uzytkownika=(SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login='" + login + "') AND zdobyte_punkty > 9";
                 cmd = new SqlCommand(query, con);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -96,6 +112,11 @@ namespace TestOnline
         protected void RightPanel_Load()
         {
 
+        }
+
+        protected void RankPosition_Clicked(object sender, EventArgs args)
+        {
+            Response.Redirect("Ranking.aspx");
         }
     }
 }
