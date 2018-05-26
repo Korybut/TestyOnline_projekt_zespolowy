@@ -36,6 +36,24 @@
             <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Button" />
             <br />
             <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+            <br /><br />
+            <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
+                <ItemTemplate>
+                    <asp:Button ID="Button2" runat="server" Text="Button" CommandName="LoadCategory" CommandArgument='<%# Eval("id_kategorii") %>' />
+                </ItemTemplate>
+            </asp:Repeater>
+            <br />
+            <br />
+            <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:DataList ID="DataList1" runat="server">
+                <ItemTemplate>
+                    <asp:Button ID="Button2" runat="server" Text="Button" CommandName="LoadCategory" CommandArgument='<%# Eval("id_kategorii") %>' />
+                </ItemTemplate>
+            </asp:DataList>
         </div>
     </form>
 </body>

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,7 +15,24 @@ namespace TestOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataSet ds = GetData();
 
+            Repeater1.DataSource = ds;
+            Repeater1.DataBind();
+            DataList1.DataSource = ds;
+            DataList1.DataBind();
+        }
+
+        private DataSet GetData()
+        {
+            string CS = "Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN";
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM KATEGORIE", con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                return ds;
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -141,6 +160,14 @@ namespace TestOnline
             } else
             {
                 TextBox7.Text = "NIE!";
+            }
+        }
+
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName.ToString() == "LoadCategory")
+            {
+                Label5.Text = e.CommandArgument.ToString();
             }
         }
     }
