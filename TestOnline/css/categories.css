@@ -1,26 +1,22 @@
-﻿.category_panel {
-    position: relative;
-    width: 80%;
+﻿.categoryPanel {
+    position: fixed;
+    top: 15vh;
     left: 10%;
-    top: 11vh;
-    height: 81vh;
-    z-index: -9;
+    width: 80%;
+    height: 77vh;
 }
 
 .category {
     position: relative;
+    width: 40%;
+    padding: 5%;
     float: left;
-    width: 46%;
-    height: 180px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+
 }
 
 .button {
     position: relative;
-    width: 72%;
+    width: 100%;
     float: left;
     height: auto;
     background-color: #39AB00;
@@ -39,22 +35,13 @@
     background-color: #5BCD00;
 }
 
-.load_pic {
-    position: relative;
-    width: 45%;
-    cursor: pointer;
-    height: auto;
-    top: 10px;
-    left: 25px;
-}
-
-.category .content {
+.content {
     position: relative;
     float: left;
     width: 95%;
     top: 15px;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.0em;
     font-weight: 400;
 }
