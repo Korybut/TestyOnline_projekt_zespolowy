@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace TestOnline
@@ -27,8 +23,12 @@ namespace TestOnline
                 ResultButton.Visible = true;
             }
 
+            if(Session["nazwa_kategorii"] != null)
+            {
+                LabelNameCategory.Text = Session["nazwa_kategorii"].ToString();
+            }
+
             NumberLabel.Text = numerPytania.ToString(); // ustawienie numeru pytania na etykiecie
-            //ProgresBar.Style.Add("width", ((int)(60/(20/numerPytania))).ToString() + "%"); // ustawienie długości paska postępu
             ContentLabel.Text = test20.Questions[count].Content;
             RadioBTN.Items.Add(new ListItem(test20.Questions[count].Ans1));
             RadioBTN.Items.Add(new ListItem(test20.Questions[count].Ans2));

@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TestOnline
 {
@@ -75,17 +69,6 @@ namespace TestOnline
             if (output == "1")
             {
                 Label_Lblad.Visible = false;
-                //istnieje użytkownik, tworzenie nowej sesji
-                //string query2 = "SELECT * FROM UZYTKOWNICY WHERE Login='"+txtuser.Text+"'";
-                //SqlCommand cmd2 = cmd2.Execute
-                //Session["user"] = txtuser.ToString();
-
-                //string query2 = "SELECT * FROM UZYTKOWNICY WHERE Login='" + TextBoxLogin.Text + "'";
-
-                //SqlCommand cmd2 = new SqlCommand(query2, con);
-                //SqlDataReader reader = cmd2.ExecuteReader();
-                //while (reader.Read())
-                //{
                 Response.Cookies["userLogin"].Value = TextBox_Llogin.Text;
                 Response.Cookies["userLogin"].Expires = DateTime.Now.AddDays(1);
                 

@@ -13,6 +13,15 @@ namespace TestOnline {
     public partial class ActiveTest {
         
         /// <summary>
+        /// Kontrolka LabelNameCategory.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelNameCategory;
+        
+        /// <summary>
         /// Kontrolka NumberLabel.
         /// </summary>
         /// <remarks>
@@ -65,14 +74,5 @@ namespace TestOnline {
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ResultButton;
-        
-        /// <summary>
-        /// Kontrolka ProgresBar.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ProgresBar;
     }
 }

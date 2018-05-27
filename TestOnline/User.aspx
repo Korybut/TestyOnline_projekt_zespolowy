@@ -2,9 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Strona użytkownika - tesciki.pl</title>
-    <head>
-        <link rel="stylesheet" href="css/user.css" />
-    </head>
+    <link rel="stylesheet" href="css/user.css" />
 </asp:Content>
 <asp:Content ID="ContentPlaceHolder1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- PANEL UŻYTKOWNIKA -->

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TestOnline
 {
@@ -17,6 +11,10 @@ namespace TestOnline
         {
             Session["ID_kategorii"] = 4;
             id_kategorii = Session["ID_kategorii"].ToString();
+            if (Session["nazwa_kategorii"] != null)
+            {
+                LabelNameCategory.Text = Session["nazwa_kategorii"].ToString();
+            }
         }
 
         protected void StartTest20_Click(object sender, EventArgs e)

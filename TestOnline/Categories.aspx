@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="TestOnline.Categories" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" EnableEventValidation="false" Inherits="TestOnline.Categories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Kategorie - tesciki.pl</title>
     <link rel="stylesheet" href="css/categories.css" />

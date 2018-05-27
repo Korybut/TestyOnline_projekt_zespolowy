@@ -33,5 +33,4 @@
         <asp:Label ID="below3" runat="server" Text="Label"></asp:Label><br />
         <asp:Label ID="below0" runat="server" Text="..."></asp:Label>
     </div>
-    <asp:Label ID="Label1" runat="server" style="position: relative; top: 500px; left: 20px;" Text="Twoja pozycja: X"></asp:Label>
 </asp:Content>

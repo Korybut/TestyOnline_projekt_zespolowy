@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TestOnline
 {
@@ -51,9 +45,6 @@ namespace TestOnline
             Response.Cookies["userLogin"].Expires = DateTime.Now.AddDays(-1);
             Response.Redirect("Login.aspx");
         }
-
-        //protected System.Web.UI.HtmlControls.HtmlGenericControl UserPopup;
-        //protected bool clickedAvatar = false;
 
         protected void LogoutLinkButton_Click(object sender, EventArgs e)
         {
