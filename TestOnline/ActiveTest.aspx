@@ -1,11 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ActiveTest.aspx.cs" Inherits="TestOnline.ActiveTest" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Nazwa testu - numer pytania</title>
+    <title>Test - tesciki.pl</title>
     <link rel="stylesheet" href="css/activeTest.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="category_title_panel"><span>Nazwa kategorii testu</span></div>
+    <div class="category_title_panel">
+        <span>
+            <asp:Label ID="LabelNameCategory" runat="server" Text="Nazwa kategorii testu"></asp:Label>
+        </span>
+
+    </div>
 
     <div class="question_panel">
         <!-- numer pytania sdaskda -->
@@ -26,10 +31,5 @@
         <asp:Button ID="PrevButton" class="prevButton" OnClick="Prev_Click" style="left: 3%" runat="server" Text="<" />
         <asp:Button ID="NextButton" class="nextButton" OnClick="Next_Click" style="right: 3%" runat="server" Text=">" />
         <asp:Button ID="ResultButton" class="resultButton" OnClick="Result_Click" runat="server" Text="Sprawdź wynik" />
-        <!-- pasek postępu testu -->
-        <!-- <div class="progresBar_border"></div>
-        <div class="progresBar_fill" ID="ProgresBar" runat="server"></div> -->
     </div>
-
-
 </asp:Content>
