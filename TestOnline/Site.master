@@ -9,7 +9,6 @@
     <script src="js/UserPopup.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/categories.css" />
     <link rel="stylesheet" href="css/fontello.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <asp:ContentPlaceHolder ID="head" runat="server">

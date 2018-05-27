@@ -54,14 +54,10 @@ namespace TestOnline
             Response.Redirect("CategoryMain.aspx");
         }
 
-        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+       /* protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            if(e.CommandName == "LoadCategory")
-            {
-                //i tutaj okej
-                //e.CommandArgument
-            }
-        }
-        
+            Session["ID_kategorii"] = e.CommandArgument.ToString();
+            Response.Redirect("CategoryMain.aspx");
+        } */
     }
 }
