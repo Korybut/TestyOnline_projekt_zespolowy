@@ -18,14 +18,57 @@
 .user_wall {
     position: relative;
     float: left;
+    top: 11vh;
     width: 75%;
     height: 81vh;
     display: block;
-    z-index: -10;
 }
 
 .user_wall span {
     padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.solvedCategory {
+    position: relative;
+    width: 40%;
+    padding: 5%;
+    float: left;
+}
+
+.button {
+    position: relative;
+    float: left;
+    width: 100%;
+    float: left;
+    height: auto;
+    background-color: #39AB00;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    padding: 4%;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #5BCD00;
+}
+
+.content {
+    position: relative;
+    float: left;
+    width: 95%;
+    top: 15px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+    font-weight: 400;
 }
 
 .add_category {
