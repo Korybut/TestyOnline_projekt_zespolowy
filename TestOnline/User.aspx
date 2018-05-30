@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="User.aspx.cs" Inherits="TestOnline.User" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="User.aspx.cs" EnableEventValidation="false" Inherits="TestOnline.User" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Strona użytkownika - tesciki.pl</title>
@@ -59,5 +59,19 @@
         </div>
     </div>
     <!-- TABLICA TESTÓW UŻYTKOWNIKA -->
-    <div class="user_wall"> <span>Tutaj będzie miejsce na pobrane kategorie testów.</span></div>
+    <div class="user_wall">
+        <center>
+            <br />
+            <span>Testy, które rozwiązywałeś:</span>
+        </center>
+        <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate runat="server">
+                    <div class="solvedCategory">
+                        <asp:Button ID="Button1" class="button" runat="server" OnClick="LoadCategory_Click" 
+                            CommandArgument='<%# Eval("id_kategorii") %>' 
+                            Text='<%# Eval("nazwa") + " ( " + Eval("zdobyte_punkty") + "pkt )" %>'/>
+                    </div>
+                </ItemTemplate>
+        </asp:Repeater>
+    </div>
 </asp:Content>

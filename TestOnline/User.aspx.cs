@@ -1,5 +1,7 @@
 using System;
+using System.Data;
 using System.Data.SqlClient;
+using System.Web.UI.WebControls;
 
 namespace TestOnline
 {
@@ -16,6 +18,7 @@ namespace TestOnline
             if (Request.Cookies["userLogin"] != null)
             {
                 LeftPanel_Load(); // za³adowanie lewego panelu
+                RightPanel_Load(); // za³adowanie prawego panelu
             }
             else
             {
@@ -105,7 +108,35 @@ namespace TestOnline
 
         protected void RightPanel_Load()
         {
+            DataSet ds = GetData();
+            Repeater1.DataSource = ds;
+            Repeater1.DataBind();
+        }
 
+        private DataSet GetData()
+        {
+            string login = Server.HtmlEncode(Request.Cookies["userLogin"].Value);
+            string CS = "Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN";
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlDataAdapter da = new SqlDataAdapter("SELECT TOP 1 KATEGORIE.id_kategorii, KATEGORIE.nazwa, TESTY.zdobyte_punkty " +
+                    "FROM KATEGORIE, TESTY WHERE KATEGORIE.id_kategorii = (" +
+                    "SELECT id_kategorii FROM TESTY WHERE id_uzytkownika = (" +
+                    "SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login = '" + login + "')) ORDER BY TESTY.zdobyte_punkty DESC", con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                return ds;
+            }
+        }
+
+        protected void LoadCategory_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            RepeaterItem item = (RepeaterItem)btn.NamingContainer;
+            Button btnx = (Button)item.FindControl("Button");
+            Session["ID_kategorii"] = btn.CommandArgument.ToString();
+            Session["nazwa_kategorii"] = btn.Text;
+            Response.Redirect("CategoryMain.aspx");
         }
 
         protected void RankPosition_Clicked(object sender, EventArgs args)
