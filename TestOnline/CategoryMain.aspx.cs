@@ -48,6 +48,27 @@ namespace TestOnline
             Session["Test20"] = NowyTest; // przekazanie obiektu NowyTest do sesji
             Response.Redirect("ActiveTest.aspx");
         }
+
+        protected void OneQuestion_Click(object sender, EventArgs e)
+        {
+            Question question = new Question();
+
+            SqlConnection con = new SqlConnection("Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN");
+            con.Open();
+            string query = "SELECT * FROM PYTANIA WHERE id_kategorii=" + id_kategorii + " ORDER BY NEWID()"; // losowe pobranie pytań z bazy
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                question = new Question(Convert.ToInt32(reader.GetValue(0)),
+                    reader.GetString(2), reader.GetString(3),
+                    reader.GetString(4), reader.GetString(5),
+                    reader.GetString(6), Convert.ToInt32(reader.GetValue(7)));
+            }
+            con.Close();
+            Session["Question"] = question; // przekazanie obiektu NowyTest do sesji
+            Response.Redirect("OneQuestion.aspx");
+        }
     }
 }
  

@@ -10,7 +10,7 @@
 namespace TestOnline {
     
     
-    public partial class CategoryMain {
+    public partial class OneQuestion {
         
         /// <summary>
         /// Kontrolka LabelNameCategory.
@@ -22,30 +22,39 @@ namespace TestOnline {
         protected global::System.Web.UI.WebControls.Label LabelNameCategory;
         
         /// <summary>
-        /// Kontrolka StartTest20.
+        /// Kontrolka ContentLabel.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button StartTest20;
+        protected global::System.Web.UI.WebControls.Label ContentLabel;
         
         /// <summary>
-        /// Kontrolka OneQuestionButton.
+        /// Kontrolka RadioBTN.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button OneQuestionButton;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioBTN;
         
         /// <summary>
-        /// Kontrolka Button3.
+        /// Kontrolka CheckButton.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button CheckButton;
+        
+        /// <summary>
+        /// Kontrolka ReturnButton.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ReturnButton;
     }
 }

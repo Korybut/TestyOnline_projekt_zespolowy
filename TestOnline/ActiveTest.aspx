@@ -13,7 +13,7 @@
     </div>
 
     <div class="question_panel">
-        <!-- numer pytania sdaskda -->
+        <!-- numer pytania -->
         <div id="question_number"><asp:Label ID="NumberLabel" runat="server" Text="0"></asp:Label></div>
         <!-- opcjonalnie (ustawić show/hide) przycisk do wyświetlenia obrazka -->
         <asp:imagebutton runat="server" class="image_icon" ImageUrl="~/img/image_icon.png" AlternateText="Zobacz obrazek"></asp:imagebutton>
