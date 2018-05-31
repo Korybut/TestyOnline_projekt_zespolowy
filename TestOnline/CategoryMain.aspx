@@ -10,6 +10,6 @@
         </span>
     </div><br />
     <asp:Button ID="StartTest20" OnClick="StartTest20_Click" class="btnCat" runat="server" Text="Rozpocznij nowy test (20 pytań)" /><br />
-    <asp:Button ID="Button2" class="btnCat" runat="server" Text="Wylosuj pytanie" /><br />
+    <asp:Button ID="OneQuestionButton" OnClick="OneQuestion_Click" class="btnCat" runat="server" Text="Wylosuj pytanie" /><br />
     <asp:Button ID="Button3" class="btnCat" runat="server" Text="Przeglądaj wszystkie pytania" /><br />
 </asp:Content>
