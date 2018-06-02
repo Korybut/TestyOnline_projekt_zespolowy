@@ -90,6 +90,7 @@
     <Content Include="css\resultTest.css" />
     <Content Include="css\user.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ExchangePassword.aspx" />
     <Content Include="font\fontello.svg" />
     <Content Include="img\default-avatar.jpg" />
     <Content Include="img\first_place.png" />
@@ -101,6 +102,7 @@
     <Content Include="img\second_place.png" />
     <Content Include="img\third_place.png" />
     <Content Include="Login.aspx" />
+    <Content Include="MyData.aspx" />
     <Content Include="NewPassword.aspx" />
     <Content Include="font\fontello.eot" />
     <Content Include="font\fontello.ttf" />
@@ -155,12 +157,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExchangePassword.aspx.cs">
+      <DependentUpon>ExchangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExchangePassword.aspx.designer.cs">
+      <DependentUpon>ExchangePassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyData.aspx.cs">
+      <DependentUpon>MyData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyData.aspx.designer.cs">
+      <DependentUpon>MyData.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewPassword.aspx.cs">
       <DependentUpon>NewPassword.aspx</DependentUpon>
