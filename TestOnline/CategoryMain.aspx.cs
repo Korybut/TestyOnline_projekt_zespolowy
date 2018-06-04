@@ -9,7 +9,6 @@ namespace TestOnline
         string id_kategorii;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["ID_kategorii"] = 4;
             id_kategorii = Session["ID_kategorii"].ToString();
             if (Session["nazwa_kategorii"] != null)
             {

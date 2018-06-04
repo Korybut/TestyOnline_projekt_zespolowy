@@ -119,10 +119,14 @@ namespace TestOnline
             string CS = "Data Source = 54.38.54.112; Initial Catalog = TestyOnline; Persist Security Info = True; User ID = TestyOnline; Password=k3HNMRm8rJJR5zfN";
             using (SqlConnection con = new SqlConnection(CS))
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT TOP 1 KATEGORIE.id_kategorii, KATEGORIE.nazwa, TESTY.zdobyte_punkty " +
+                /*SqlDataAdapter da = new SqlDataAdapter("SELECT KATEGORIE.id_kategorii, KATEGORIE.nazwa, TESTY.zdobyte_punkty " +
                     "FROM KATEGORIE, TESTY WHERE KATEGORIE.id_kategorii = (" +
                     "SELECT id_kategorii FROM TESTY WHERE id_uzytkownika = (" +
-                    "SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login = '" + login + "')) ORDER BY TESTY.zdobyte_punkty DESC", con);
+                    "SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login = '" + login + "')) ORDER BY TESTY.zdobyte_punkty DESC", con);*/
+
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TESTY WHERE id_uzytkownika" +
+                    " = (SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login = '" + login + "')", con);
+
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 return ds;

@@ -24,7 +24,7 @@ namespace TestOnline
                 string query = "IF NOT EXISTS ( SELECT 1 FROM TESTY WHERE " +
                     "id_uzytkownika=(SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login='" + login +
                     "') AND id_kategorii=" + id_kategorii + ") INSERT INTO TESTY VALUES(" + id_kategorii +
-                    ", (SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login ='" + login + "'), " + valueCorrectAns + ", GETDATE())" +
+                    ", (SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login ='" + login + "'), " + valueCorrectAns + ", GETDATE(), (SELECT nazwa FROM KATEGORIE WHERE id_kategorii =" + id_kategorii + "))" +
                     "ELSE UPDATE TESTY SET zdobyte_punkty=" + valueCorrectAns + ", data_wypelnienia=GETDATE() WHERE id_kategorii=" + id_kategorii +
                     " AND id_uzytkownika=(SELECT id_uzytkownika FROM UZYTKOWNICY WHERE login='" + login + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
