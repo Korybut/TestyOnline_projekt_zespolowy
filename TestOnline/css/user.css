@@ -6,6 +6,7 @@
     height: 81vh;
     display: block;
     background-color: #2B2C30;
+    z-index: -10;
 }
 
 .user_info {
@@ -22,6 +23,7 @@
     width: 75%;
     height: 81vh;
     display: block;
+    z-index: -10;
 }
 
 .user_wall span {
@@ -29,6 +31,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.7em;
     font-weight: 600;
+    z-index: -10;
 }
 
 .solvedCategory {
@@ -36,6 +39,7 @@
     width: 40%;
     padding: 5%;
     float: left;
+    z-index: -10;
 }
 
 .button {
@@ -53,6 +57,7 @@
     font-weight: 600;
     text-align: center;
     padding: 4%;
+    z-index: -10;
 }
 
 .button:hover {
@@ -69,6 +74,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.0em;
     font-weight: 400;
+    z-index: -10;
 }
 
 .add_category {
