@@ -74,10 +74,12 @@
     </Content>
     <Content Include="Categories.aspx" />
     <Content Include="CategoryMain.aspx" />
+    <Content Include="CheckAnswers.aspx" />
     <Content Include="css\activeTest.css" />
     <Content Include="css\animation.css" />
     <Content Include="css\categories.css" />
     <Content Include="css\categoryMain.css" />
+    <Content Include="css\checkAnswers.css" />
     <Content Include="css\default.css" />
     <Content Include="css\fontello-codes.css" />
     <Content Include="css\fontello-embedded.css" />
@@ -147,6 +149,13 @@
     </Compile>
     <Compile Include="CategoryMain.aspx.designer.cs">
       <DependentUpon>CategoryMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckAnswers.aspx.cs">
+      <DependentUpon>CheckAnswers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckAnswers.aspx.designer.cs">
+      <DependentUpon>CheckAnswers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

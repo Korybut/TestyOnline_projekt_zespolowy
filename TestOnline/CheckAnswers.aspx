@@ -1,10 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ActiveTest.aspx.cs" Inherits="TestOnline.ActiveTest" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckAnswers.aspx.cs" Inherits="TestOnline.CheckAnswers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Test - tesciki.pl</title>
+    <title>Sprawdź odpowiedzi - tesciki.pl</title>
     <link rel="stylesheet" href="css/activeTest.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="category_title_panel">
         <span>
             <asp:Label ID="LabelNameCategory" runat="server" Text="Nazwa kategorii testu"></asp:Label>
@@ -15,17 +14,18 @@
     <div class="question_panel">
         <!-- numer pytania -->
         <div id="question_number"><asp:Label ID="NumberLabel" runat="server" Text="0"></asp:Label></div>
-        <!-- opcjonalnie (ustawić show/hide) przycisk do wyświetlenia obrazka -->
-        <!-- <asp:imagebutton runat="server" class="image_icon" ImageUrl="~/img/image_icon.png" AlternateText="Zobacz obrazek"></asp:imagebutton> -->
-        <!-- <div class="image_txt">Zobacz<br />obrazek</div> -->
         <!-- treść pytania -->
         <div class="question_content">
             <asp:Label ID="ContentLabel" runat="server" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             ex ea commodo consequat."></asp:Label>
         </div>
+        <br />
+        <br />
         <!-- radiobutton list do podpięcia z widoku -->
-        <asp:radiobuttonlist class="radio_list" ID="RadioBTN" runat="server"></asp:radiobuttonlist>
+        <asp:Label ID="UserSelectedAnswer" runat="server" Text="Twoja odpowiedź"></asp:Label>
+        <br />
+        <asp:Label ID="CorrectAnswer" runat="server" Text="Poprawna odpowiedź"></asp:Label>
         <br />
         <!-- przyciski wstecz i następne pytanie -->
         <asp:Button ID="PrevButton" class="prevButton" OnClick="Prev_Click" style="left: 3%" runat="server" Text="<" />
