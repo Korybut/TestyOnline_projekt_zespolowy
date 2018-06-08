@@ -34,6 +34,12 @@ namespace TestOnline
             
         }
 
+        protected void Show_Click(object sender, EventArgs e)
+        {
+            Session["NumerPytania"] = 0; // inkrementacja liczby rozpoczętych testów przez użytkownika (statystyki)
+            Response.Redirect("CheckAnswers.aspx");
+        }
+
         protected void Home_Click(object sender, EventArgs e)
         {
             Response.Redirect("User.aspx");
