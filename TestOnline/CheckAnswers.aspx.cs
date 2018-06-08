@@ -32,7 +32,7 @@ namespace TestOnline
 
             NumberLabel.Text = numerPytania.ToString(); // ustawienie numeru pytania na etykiecie
             ContentLabel.Text = test20.Questions[count].Content;
-            switch (test20.Questions[count].SelectedAnswer)
+            switch (test20.Questions[count].SelectedAnswer+1)
             {
                 case 1:
                     UserSelectedAnswer.Text = test20.Questions[count].Ans1;
@@ -41,10 +41,10 @@ namespace TestOnline
                     UserSelectedAnswer.Text = test20.Questions[count].Ans2;
                     break;
                 case 3:
-                    UserSelectedAnswer.Text = test20.Questions[count].Ans1;
+                    UserSelectedAnswer.Text = test20.Questions[count].Ans3;
                     break;
                 case 4:
-                    UserSelectedAnswer.Text = test20.Questions[count].Ans1;
+                    UserSelectedAnswer.Text = test20.Questions[count].Ans4;
                     break;
                 default:
                     UserSelectedAnswer.Text = "nie zaznaczono odpowiedzi";
@@ -60,11 +60,20 @@ namespace TestOnline
                     CorrectAnswer.Text = test20.Questions[count].Ans2;
                     break;
                 case 3:
-                    CorrectAnswer.Text = test20.Questions[count].Ans1;
+                    CorrectAnswer.Text = test20.Questions[count].Ans3;
                     break;
                 case 4:
-                    CorrectAnswer.Text = test20.Questions[count].Ans1;
+                    CorrectAnswer.Text = test20.Questions[count].Ans4;
                     break;
+            }
+
+            if (test20.Questions[count].CompareAnswerWithSelected())
+            {
+                UserSelectedAnswer.Style.Add("color", "#39AB00");
+            }
+            else
+            {
+                UserSelectedAnswer.Style.Add("color", "#ff2525");
             }
         }
 

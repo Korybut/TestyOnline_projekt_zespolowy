@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Sprawdź odpowiedzi - tesciki.pl</title>
     <link rel="stylesheet" href="css/activeTest.css" />
+    <link rel="stylesheet" href="css/checkAnswers.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="category_title_panel">
@@ -22,10 +23,14 @@
         </div>
         <br />
         <br />
-        <!-- radiobutton list do podpięcia z widoku -->
-        <asp:Label ID="UserSelectedAnswer" runat="server" Text="Twoja odpowiedź"></asp:Label>
         <br />
-        <asp:Label ID="CorrectAnswer" runat="server" Text="Poprawna odpowiedź"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <!-- radiobutton list do podpięcia z widoku -->
+        <asp:Label ID="UserSelectedAnswer" runat="server" class="answerLabels" Text="Twoja odpowiedź"></asp:Label>
+        <br />
+        <asp:Label ID="CorrectAnswer" runat="server" class="answerLabels" Text="Poprawna odpowiedź"></asp:Label>
         <br />
         <!-- przyciski wstecz i następne pytanie -->
         <asp:Button ID="PrevButton" class="prevButton" OnClick="Prev_Click" style="left: 3%" runat="server" Text="<" />

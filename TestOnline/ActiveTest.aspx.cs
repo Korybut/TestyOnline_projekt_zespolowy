@@ -42,7 +42,7 @@ namespace TestOnline
 
         protected void Next_Click(object sender, EventArgs e)
         {
-            if(RadioBTN.SelectedItem != null)
+            if (RadioBTN.SelectedItem != null)
             {
                 test20.Questions[count].SelectedAnswer = RadioBTN.SelectedIndex;
                 ContentLabel.Text = test20.Questions[count].SelectedAnswer.ToString();
