@@ -33,7 +33,8 @@ namespace TestOnline
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            TextBox2.Text = Szyfrowanie(TextBox1.Text);
+            //TextBox2.Text = Szyfrowanie(TextBox1.Text);
+            TextBox2.Text = GetSHA1(GetSalt(GetMD5(TextBox1.Text)));
         }
 
         string hash = "f83$7*utX";
