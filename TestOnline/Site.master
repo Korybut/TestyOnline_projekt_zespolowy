@@ -44,8 +44,8 @@
             <!-- Panel typu popup z odnośnikami do Ustawień i Wyloguj -->
             <asp:Panel ID="Panel_login_popup" runat="server">
                 <div id="UserPopup">
-                    <span><a href="Ranking.aspx">Moje dane</a></span><br />
-                    <span><a href="">Zmiana hasła</a></span><br />
+                    <span><a href="MyData.aspx">Moje dane</a></span><br />
+                    <span><a href="ExchangePassword.aspx">Zmiana hasła</a></span><br />
                     <span><asp:LinkButton ID="LogoutLinkButton" runat="server" OnClick="LogoutLinkButton_Click" Text="Wyloguj"></asp:LinkButton></span>
                 </div>
             </asp:Panel>

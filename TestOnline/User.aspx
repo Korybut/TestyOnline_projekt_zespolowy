@@ -62,6 +62,7 @@
     <div class="user_wall_header">
         <center>
             <br />
+            <br />
             <span>Testy, które rozwiązywałeś:</span>
         </center>
     </div>
