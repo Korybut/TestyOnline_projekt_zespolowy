@@ -59,11 +59,14 @@
         </div>
     </div>
     <!-- TABLICA TESTÓW UŻYTKOWNIKA -->
-    <div class="user_wall">
+    <div class="user_wall_header">
         <center>
+            <br />
             <br />
             <span>Testy, które rozwiązywałeś:</span>
         </center>
+    </div>
+    <div class="user_wall">
         <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate runat="server">
                     <div class="solvedCategory">

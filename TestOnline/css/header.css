@@ -73,7 +73,7 @@ header {
     top: 12vh;
     right: 10px;
     width: 180px;
-    height: 70px;
+    height: 80px;
     background-color: white;
     border-radius: 5px;
     display: none;
@@ -87,6 +87,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     text-align: center;
+    z-index: 11;
 }
 
 #UserPopup::after {
@@ -102,4 +103,5 @@ header {
 	border-bottom-color: white;
 	border-width: 10px;
 	margin-left: -10px;
+
 }

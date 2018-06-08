@@ -64,3 +64,12 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+.checkPanel {
+    float: left;
+    width: 18vh;
+    height: 12vh;
+    padding: 1vh;
+    display: block;
+    background-color: blueviolet;
+}
