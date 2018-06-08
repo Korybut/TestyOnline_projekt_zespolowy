@@ -19,7 +19,7 @@
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             &nbsp;<asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
             <br /><br /><br /><br /><br />
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click" />
+            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click" Height="29px" />
             <br /><br />
             <asp:TextBox ID="TextBox5" runat="server" Height="124px" TextMode="MultiLine"></asp:TextBox>
             <br />
