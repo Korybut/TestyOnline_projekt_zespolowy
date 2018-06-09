@@ -37,7 +37,7 @@
             </Fields>
         </asp:DetailsView>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TestyOnlineConnectionString %>" DeleteCommand="DELETE FROM [UZYTKOWNICY] WHERE [id_uzytkownika] = @id_uzytkownika" InsertCommand="INSERT INTO [UZYTKOWNICY] ([poziom], [login], [haslo], [email], [imie], [data_rejestracji]) VALUES (@poziom, @login, @haslo, @email, @imie, @data_rejestracji)" SelectCommand="SELECT * FROM [UZYTKOWNICY] WHERE ([login] = @login)" UpdateCommand="UPDATE [UZYTKOWNICY] SET [poziom] = @poziom, [login] = @login, [haslo] = @haslo, [email] = @email, [imie] = @imie, [data_rejestracji] = @data_rejestracji WHERE [id_uzytkownika] = @id_uzytkownika">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TestyOnlineConnectionString %>" DeleteCommand="DELETE FROM [UZYTKOWNICY] WHERE [id_uzytkownika] = @id_uzytkownika" InsertCommand="INSERT INTO [UZYTKOWNICY] ([poziom], [login], [haslo], [email], [imie], [data_rejestracji]) VALUES (@poziom, @login, @haslo, @email, @imie, @data_rejestracji)" SelectCommand="SELECT * FROM [UZYTKOWNICY] WHERE ([login] = @login)" UpdateCommand="UPDATE [UZYTKOWNICY] SET [email] = @email, [imie] = @imie WHERE [id_uzytkownika] = @id_uzytkownika">
             <DeleteParameters>
                 <asp:Parameter Name="id_uzytkownika" Type="Decimal" />
             </DeleteParameters>
@@ -53,12 +53,8 @@
                 <asp:CookieParameter CookieName="userLogin" DefaultValue="0" Name="login" Type="String" />
             </SelectParameters>
             <UpdateParameters>
-                <asp:Parameter Name="poziom" Type="String" />
-                <asp:Parameter Name="login" Type="String" />
-                <asp:Parameter Name="haslo" Type="String" />
                 <asp:Parameter Name="email" Type="String" />
                 <asp:Parameter Name="imie" Type="String" />
-                <asp:Parameter Name="data_rejestracji" Type="String" />
                 <asp:Parameter Name="id_uzytkownika" Type="Decimal" />
             </UpdateParameters>
         </asp:SqlDataSource>
