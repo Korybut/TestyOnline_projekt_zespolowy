@@ -25,7 +25,6 @@ namespace TestOnline
         protected void DetailsView1_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
         {
             
-            
         }
     }
 }
